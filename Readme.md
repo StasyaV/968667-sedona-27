@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Анастасия Войтулевич](https://up.htmlacademy.ru/htmlcss/27/user/968667).
-* Наставник: `Неизвестно`.
+* Наставник: [Игорь Соболь](https://htmlacademy.ru/profile/dominussobol).
 
 ---
 
