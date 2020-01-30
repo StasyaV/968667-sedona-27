@@ -29,11 +29,11 @@
     </header>
     <main>
       <section>
-        <h1 class="hidden">Welcome to Sedona</h1>
+        <h1 class="visually-hidden">Welcome to Sedona</h1>
         <img src="img/intro-welcome.svg" class="welcome" width="459" height="353" alt="Welcome to the gorgoeus Sedona">
       </section>
       <section class="about-city">
-        <h2 class="hidden">О городе Седона</h2>
+        <h2 class="visually-hidden">О городе Седона</h2>
         <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <ol class="reasons">
@@ -76,14 +76,14 @@
         </ol>
       </section>
       <section class="liked-it">
-        <h2 class="hidden">Найти гостиницу в Седоне</h2>
+        <h2 class="visually-hidden">Найти гостиницу в Седоне</h2>
           <p>Заинтересовались?</p>
           <p>Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <button>Поиск гостиницы в Седоне</button>
       </section>
       <section>
-        <h2 class="hidden">Седона на карте</h2>
+        <h2 class="visually-hidden">Седона на карте</h2>
         <!-- здесь будет карта -->
       </section>
     </main>
@@ -94,16 +94,13 @@
       </div>
       <div class="social-link">
         <a href="#">
-          Твиттер
-          <img src="img/twitter.svg" width="46" height="48" alt="Twitter logo">
+          <img src="img/twitter.svg" width="46" height="48" alt="Twitter">
         </a>
         <a href="#">
-          Фейсбук
-          <img src="img/fb-icon.svg" width="46" height="48" alt="Facebook logo">
+          <img src="img/fb-icon.svg" width="46" height="48" alt="Facebook">
         </a>
         <a href="#">
-          YouTube
-          <img src="img/youtube.svg" width="46" height="48" alt="Youtube logo">
+          <img src="img/youtube.svg" width="46" height="48" alt="Youtube">
         </a>
       </div>
       <div class="developed">
@@ -114,10 +111,26 @@
       </div>
     </footer>
     <section class="search-form">
-      <form>
-        <!-- Форма поиска гостиниы -->
-      <button>Найти</button>
-    </form>
+      <h2 class="search-form-tittle">Поиск гостиницы в Седоне</h2>
+      <form class="book-hotel" method="post" action="https://echo.htmlacademy.ru">
+        <p>
+          <label for="chek-in">Дата заезда</label>
+          <input type="date" id="check-in" name="check-in-date" value="2017-04-24">
+        </p>
+        <p>
+          <label for="check-out">Дата выезда</label>
+          <input type="date" id="check-out" name="check-out-date" value="2017-07-04">
+        </p>
+        <p>
+          <label for="guests">Взрослые</label>
+          <input type="number" id="guests" value="2" min="1" step="1">
+        </p>
+        <p>
+          <label for="guests-children">Дети</label>
+          <input type="number" id="guests-children" value="0" step="1">
+        </p>
+        <button>Найти</button>
+      </form>
     </section>
   </body>
 </html>
