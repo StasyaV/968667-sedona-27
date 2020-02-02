@@ -29,8 +29,55 @@
     </header>
     <main>
       <h1 class="visually-hidden">Гостиницы в Седоне</h1>
-      <!-- <section class="filter">фильтр
-      </section> -->
+      <section class="filter">
+        <h3 class="visually-hidden">Уточнить параметры поиска</h3>
+        <form method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Инфраструктура</legend>
+          <p>
+            <input type="checkbox" id="swimming-pool" name="swimming-pool" checked>
+            <label for="swimming-pool">Бассейн</label>
+          </p>
+          <p>
+            <input type="checkbox" id="parking" name="parking">
+            <label for="parking">Парковка</label>
+          </p>
+          <p>
+            <input type="checkbox" id="wi-fi" name="wi-fi">
+            <label for="wi-fi">Wi-fi</label>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья</legend>
+          <p>
+            <input type="checkbox" id="hotel" name="hotel" checked>
+            <label for="hotel">Гостиницы</label>
+          </p>
+          <p>
+            <input type="checkbox" id="motel" name="motel" checked>
+            <label for="motel">Мотель</label>
+          </p>
+          <p>
+            <input type="checkbox" id="appartment" name="appartment" checked>
+            <label for="appartment">Аппартаменты</label>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend class="visually-hidden">Цена<legend>
+            <label for="price-per-day">Стоимость в сутки(р):</label>
+            <label class="min-price">
+              <input name="min-price" type="text" value="от 0р">
+            </label>
+            <label class="max-price">
+              <input name="max-price" type="text" value="до 3000р">
+            </label>
+            <input type="range" id="price-per-day" name="price-per-day" min="0" max="4000" step="1">
+        </fieldset>
+        <button type="submit">
+            Показать
+        </button>
+        </form>
+      </section>
       <section class="search-result">
         <h2 class="visually-hidden">Результат поиска гостиниц в Седоне</h2>
         <div class="sort">
@@ -67,7 +114,7 @@
           <p class="raiting-mark">Рейтинг 8,9</p>
         </article>
         <article class="hotel">
-          <img src="img/hotel-villas.jpg" width="135" height="90" alt="Villas at Poco Diablo apartment photo">
+          <img src="img/hotel-villas.jpg" width="135" height="90" alt="Villas at Poco Diablo appartment photo">
           <div class="hotel-info">
             <h3>Villas at Poco Diablo</h3>
             <p>Аппартаменты</p>
@@ -105,11 +152,5 @@
         </a>
       </div>
     </footer>
-    <section class="search-form">
-      <form>
-        <!-- Форма поиска гостиниы -->
-      <button>Найти</button>
-    </form>
-    </section>
   </body>
 </html>
