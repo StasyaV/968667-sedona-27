@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+}
+a {
+  text-decoration: none;
+}
+.site-navigation,
+.reasons,
+.city-features {
+  list-style: none;
+}
+.main-navigation {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+.site-navigation a:focus,
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+.site-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+.city {
+  background-image: url('../img/background-photo.jpg');
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 773px;
+  text-align: center;
+  color: #333333;
+}
+.city-description {
+  background-color: #ffffff;
+  height: 216px;
+}
+.city-description-title {
+  font-size: 21px;
+  font-weight: bold;
+}
+.liked-it {
+  font-size: 14px;
+  color: #333333;
+  text-align: center;
+}
+.liked-it-title {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 36px;
+}
+.liked-it-button {
+  width: 568px;
+  height: 86px;
+  background-color: #766357;
+  color: #ffffff;
+  text-align: center;
+  font-size: 21px;
+  line-height: 26px;
+  border: none;
+}
+.liked-it-button:hover,
+.liked-it-button:focus {
+  background-color: #766357;
+}
+.liked-it-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+.contacts {
+  font-size: 21px;
+  line-height: 26px;
+}
+.social-link {
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.twitter {
+  background-image: url('../img/twitter.svg');
+}
+.fb {
+  background-image: url('../img/fb-icon.svg');
+}
+.youtube {
+  background-image: url('../img/youtube.svg');
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: #669ec0;
+}
+.social-link:active {
+  opacity: 0.3;
+}
+.developed a {
+  display: inline-block;
+  width:115px;
+  height: 41px;
+  background-image: url('../img/logo-htmlacademy.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.developed a:hover,
+.developed a:focus {
+  background-image: url('../img/logo-htmla-hover.png');
+}
+.developed a:active {
+  opacity: 0.3;
+}
+.hotel-title {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+}
+.hotel-title:hover,
+.hotel-title:focus {
+  color: #81b3d2;
+}
+.hotel-title:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+.hotel-info p {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: left;
+  color: #333333;
+}
+.hotel-raiting-mark {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #666666;
+  background-color: #f2f2f2;
+}
+.hotel-learn-more {
+  display: inline-block;
+  width: 110px;
+  height: 27px;
+  background-color: #81b3d2;
+  color: #ffffff;
+  text-align: center;
+}
+.hotel-learn-more:hover,
+.hotel-learn-more:focus {
+  background-color: #669ec0;
+}
+.hotel-learn-more:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+.hotel-book {
+  width: 142px;
+  height: 27px;
+  background-color: #766357;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+}
+.hotel-book:hover,
+.hotel-book:focus {
+  background-color: #604e43;
+}
+.hotel-book:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}

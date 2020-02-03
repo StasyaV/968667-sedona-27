@@ -3,15 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic"
+    rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="#">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="#">
           <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип города">
           На главную
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li>
             <a href="#">Информация</a>
           </li>
@@ -27,60 +31,61 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <section>
-        <h1 class="visually-hidden">Welcome to Sedona</h1>
+    <main class="container">
+      <section class="city">
+        <h1 class="visually-hidden city-tittle">Welcome to Sedona</h1>
         <img src="img/intro-welcome.svg" class="welcome" width="459" height="353" alt="Welcome to the gorgoeus Sedona">
-      </section>
-      <section class="about-city">
+      <article class="city-description">
         <h2 class="visually-hidden">О городе Седона</h2>
-        <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="city-description-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </article>
+      </section>
         <ol class="reasons">
           <li class="reasons reason-1">
-            <p class="reasons-tittle"><span class="reason-number">№1</span> Настоящий городок</p>
+            <p class="reasons-title"><span class="reason-number">№1</span> Настоящий городок</p>
             <p class="reasons-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <img src="img/feature-picture-1.jpg" width="800" height="256" alt="Фото города Седона">
             <ul class="reasons city-features">
               <li>
-                <p class="reasons-tittle house">Жильё</p>
+                <p class="reasons-title house">Жильё</p>
                 <p class="reasons-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
               <li>
-                <p class="reasons-tittle food">Еда</p>
+                <p class="reasons-title food">Еда</p>
                 <p class="reasons-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li>
-                <p class="reasons-tittle gifts">Сувениры</p>
+                <p class="reasons-title gifts">Сувениры</p>
                 <p class="reasons-description">Не только китайского, но и местного производства!</p>
               </li>
             </ul>
           </li>
           <li class="reasons reason-2">
             <img src="img/feature-picture-2.jpg" width="800" height="256" alt="Фото Моста Дьявола в Седоне">
-            <p class="reasons-tittle"><span>№2</span> Там есть Мост дьявола</p>
+            <p class="reasons-title"><span>№2</span> Там есть Мост дьявола</p>
             <p class="reasons-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </li>
           <li class="reasons reason-3">
-            <p class="reasons-tittle"><span class="reason-number">№3<span> Небольшая площадь</p>
+            <p class="reasons-title"><span class="reason-number">№3<span> Небольшая площадь</p>
             <p class="reasons-description">Все достопримечательности находятся очень близко</p>
           </li>
           <li class="reasons reason-4">
-            <p class="reasons-tittle"><span class="reason-number">№4</span> Красивая дорога</p>
+            <p class="reasons-title"><span class="reason-number">№4</span> Красивая дорога</p>
             <p class="reasons-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="reasons reason-5">
-            <p class="reasons-tittle"><span class="reason-number">№5</span> Мало туристов</p>
+            <p class="reasons-title"><span class="reason-number">№5</span> Мало туристов</p>
             <p class="reasons-description">Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ol>
       </section>
       <section class="liked-it">
         <h2 class="visually-hidden">Найти гостиницу в Седоне</h2>
-          <p>Заинтересовались?</p>
+          <p class="liked-it-title">Заинтересовались?</p>
           <p>Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <button>Поиск гостиницы в Седоне</button>
+          <button class="liked-it-button">Поиск гостиницы в Седоне</button>
       </section>
       <section>
         <h2 class="visually-hidden">Седона на карте</h2>
@@ -92,27 +97,23 @@
         <p>#visitSEDONA</p>
         <p>Тел: <a href="tel:+7495660266">+7(495) 666-02-66</a></p>
       </div>
-      <div class="social-link">
-        <a href="#">
-          <img src="img/twitter.svg" width="46" height="48" alt="Twitter">
+      <div class="social">
+        <a class="social-link twitter" href="#" title="twiter link">
         </a>
-        <a href="#">
-          <img src="img/fb-icon.svg" width="46" height="48" alt="Facebook">
+        <a class="social-link fb" href="#" title="facebook link">
         </a>
-        <a href="#">
-          <img src="img/youtube.svg" width="46" height="48" alt="Youtube">
+        <a class="social-link youtube" href="#" title="Youtube link">
         </a>
       </div>
       <div class="developed">
         <p>Website by</p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Developer logo">
+        <a href="https://htmlacademy.ru/intensive/htmlcss" title="HTML Academy">
         </a>
       </div>
     </footer>
-    <section class="search-form">
-      <h2 class="search-form-tittle">Поиск гостиницы в Седоне</h2>
-      <form class="book-hotel" method="post" action="https://echo.htmlacademy.ru">
+    <section class="search-hotel">
+      <h2 class="search-hotel-tittle">Поиск гостиницы в Седоне</h2>
+      <form class="search-hotel-form" method="post" action="https://echo.htmlacademy.ru">
         <p>
           <label for="chek-in">Дата заезда</label>
           <input type="date" id="check-in" name="check-in-date" value="2017-04-24">
@@ -129,7 +130,7 @@
           <label for="guests-children">Дети</label>
           <input type="number" id="guests-children" value="0" step="1">
         </p>
-        <button>Найти</button>
+        <button class="search-hotel-button">Найти</button>
       </form>
     </section>
   </body>
