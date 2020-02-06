@@ -15,41 +15,11 @@ a {
 .reason-1__city-features {
   list-style: none;
 }
-<<<<<<< HEAD
-
-.main-header {}
-.main-header__nav {}
-.main-header__logo {}
-.main-header__menu {}
-
-.title-one {
-  display: flex;
-  justify-content: center;
-  padding-top: 76px;
-  padding-bottom: 81px;
-  background-image: url('../img/intro-mask.svg'),
-  url('../img/background-photo.jpg');
-  background-repeat: no-repeat;
-  background-position: bottom, center;
-  background-size: contain, cover;
-}
-.city-two {
-  text-align: center;
-  padding-top: 59px;
-  padding-bottom: 56px;
-  background-image: url('../img/');
-}
 
 
 
-.main-navigation {
-=======
-.main-header__menu {
->>>>>>> bf25a3d8aea8f98940ff42f4e28a2efd24d5a1fb
-  font-size: 14px;
-  font-weight: bold;
-  text-align: center;
-}
+
+
 .main-header__menu-item:hover,
 .main-header__menu-item:focus {
   color: #81b3d2;
