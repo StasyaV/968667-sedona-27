@@ -10,33 +10,33 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo" href="#" title="На главную">
+      <nav class="main-header__nav">
+        <a class="main-header__logo" href="#" title="На главную">
           <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип города">
         </a>
-        <ul class="site-navigation">
+        <ul class="main-header__menu">
           <li>
-            <a href="#">Информация</a>
+            <a class="main-header__menu-item" href="#">Информация</a>
           </li>
           <li>
-            <a href="#">Фото и видео</a>
+            <a class="main-header__menu-item" href="#">Фото и видео</a>
           </li>
           <li>
-            <a href="#">Карта штата</a>
+            <a class="main-header__menu-item" href="#">Карта штата</a>
           </li>
           <li>
-            <a href="catalog.html">Гостиницы</a>
+            <a class="main-header__menu-item" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="container">
+    <main>
       <h1 class="visually-hidden">Гостиницы в Седоне</h1>
       <section class="filter">
-        <h3 class="visually-hidden">Уточнить параметры поиска</h3>
+        <h2 class="visually-hidden">Уточнить параметры поиска</h2>
         <form method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
-            <legend>Инфраструктура</legend>
+            <legend class="filter__title">Инфраструктура</legend>
             <p>
               <input type="checkbox" id="swimming-pool" name="swimming-pool" checked>
               <label for="swimming-pool">Бассейн</label>
@@ -76,73 +76,72 @@
             </label>
             <input type="range" id="price-per-day" name="price-per-day" min="0" max="4000" step="1">
           </fieldset>
-          <button type="submit">
+          <button class="filter__button" type="submit">
             Показать
           </button>
         </form>
       </section>
-      <section class="search-result">
+      <section class="search">
         <h2 class="visually-hidden">Результат поиска гостиниц в Седоне</h2>
         <div class="sort">
-          <p class="sort-result">Найдено: 3</p>
-          <p class="sort-name">Сортировка</p>
-          <a class="sort-name price" href="#">По цене</a>
-          <a class="sort-name type" href="#">По типу</a>
-          <a class="sort-name raiting" href="#">По рейнигу</a>
-          <div class="sort-type">
-            <a href="#" class="sort-type up"></a>
-            <a href="#" class="sort-type down"></a>
+          <p class="sort__result">Найдено: 3</p>
+          <p class="sort-title">Сортировка</p>
+          <a class="sort-name sort-name__price sort-name--active" href="#">По цене</a>
+          <a class="sort-name sort-name__type" href="#">По типу</a>
+          <a class="sort-name sort-name__raiting" href="#">По рейнигу</a>
+          <div class="search__sort-type">
+            <a href="#" class="search__sort-type--up"></a>
+            <a href="#" class="search__sort-type--down"></a>
           </div>
         </div>
         <article class="hotel">
           <img src="img/hotel-amara.jpg" width="135" height="90" alt="Amara Resort & Spa hotel photo">
-          <div class="hotel-info">
-            <h3 class="hotel-title">Amara Resort & Spa</h3>
+          <div class="hotel__info">
+            <h3 class="hotel__title">Amara Resort & Spa</h3>
             <p>Гостиница</p>
             <p>от 4000 р.</p>
-            <a href="#" class="hotel-learn-more">Подробнее</a>
-            <button class="hotel-book">Забронировать</button>
+            <a href="#" class="hotel__learn-more-button">Подробнее</a>
+            <button class="hotel__booking-button">Забронировать</button>
           </div>
-          <p class="hotel-raiting-mark">Рейтинг 8,5</p>
+          <p class="hotel__raiting-mark">Рейтинг 8,5</p>
         </article>
         <article class="hotel">
           <img src="img/hotel-desert.jpg" width="135" height="90" alt="Desert Quail Inn motel photo">
-          <div class="hotel-info">
-            <h3 class="hotel-title">Desert Quail Inn</h3>
+          <div class="hotel__info">
+            <h3 class="hotel__title">Desert Quail Inn</h3>
             <p>Мотель</p>
             <p>от 3000 р.</p>
-            <a href="#" class="hotel-learn-more">Подробнее</a>
-            <button class="hotel-book">Забронировать</button>
+            <a href="#" class="hotel__learn-more-button">Подробнее</a>
+            <button class="hotel__booking-button">Забронировать</button>
           </div>
-          <p class="hotel-raiting-mark">Рейтинг 8,9</p>
+          <p class="hotel__raiting-mark">Рейтинг 8,9</p>
         </article>
         <article class="hotel">
           <img src="img/hotel-villas.jpg" width="135" height="90" alt="Villas at Poco Diablo appartment photo">
-          <div class="hotel-info">
-            <h3 class="hotel-title">Villas at Poco Diablo</h3>
+          <div class="hotel__info">
+            <h3 class="hotel__title">Villas at Poco Diablo</h3>
             <p>Аппартаменты</p>
             <p>от 2000 р.</p>
-            <a href="#" class="hotel-learn-more">Подробнее</a>
-            <button class="hotel-book">Забронировать</button>
+            <a href="#" class="hotel__learn-more-button">Подробнее</a>
+            <button class="hotel__booking-button">Забронировать</button>
           </div>
-          <p class="hotel-raiting-mark">Рейтинг 9,2</p>
+          <p class="hotel__raiting-mark">Рейтинг 9,2</p>
         </article>
       </section>
     </main>
     <footer>
       <div class="contacts">
-        <p>#visitSEDONA</p>
-        <p>Тел: <a href="tel:+7495660266">+7(495) 666-02-66</a></p>
+        <p class="contacts__tag">#visitSEDONA</p>
+        <p class="contacts__phone">Тел: <a href="tel:+7495660266">+7(495) 666-02-66</a></p>
       </div>
       <div class="social">
-        <a class="social-link twitter" href="#" title="twiter link"></a>
-        <a class="social-link fb" href="#" title="facebook link"></a>
-        <a class="social-link youtube" href="#" title="Youtube link"></a>
+        <a class="social-link__twitter" href="#" title="twiter link"></a>
+        <a class="social-link__fb" href="#" title="facebook link"></a>
+        <a class="social-link__youtube" href="#" title="Youtube link"></a>
       </div>
       <div class="developed">
         <p>Website by</p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Developer logo">
+        <a class="developed__logo" href="https://htmlacademy.ru/intensive/htmlcss" title="HTML Academy">
         </a>
       </div>
     </footer>

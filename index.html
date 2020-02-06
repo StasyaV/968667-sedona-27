@@ -9,82 +9,115 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+
     <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo" href="#" title="На главную">
+      <nav class="main-header__nav">
+        <a class="main-header__logo" href="#" title="На главную">
           <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип города">
         </a>
-        <ul class="site-navigation">
+<<<<<<< HEAD
+
+=======
+>>>>>>> bf25a3d8aea8f98940ff42f4e28a2efd24d5a1fb
+        <ul class="main-header__menu">
           <li>
-            <a href="#">Информация</a>
+            <a class="main-header__menu-item" href="#">Информация</a>
           </li>
           <li>
-            <a href="#">Фото и видео</a>
+            <a class="main-header__menu-item" href="#">Фото и видео</a>
           </li>
           <li>
-            <a href="#">Карта штата</a>
+            <a class="main-header__menu-item" href="#">Карта штата</a>
           </li>
           <li>
-            <a href="catalog.html">Гостиницы</a>
+            <a class="main-header__menu-item" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
     </header>
+<<<<<<< HEAD
     <main class="container">
-      <section class="city">
-        <h1 class="visually-hidden city-tittle">Welcome to Sedona</h1>
-        <img src="img/intro-welcome.svg" class="welcome" width="459" height="353" alt="Welcome to the gorgoeus Sedona">
-      <article class="city-description">
-        <h2 class="visually-hidden">О городе Седона</h2>
-        <p class="city-description-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-      </article>
+      <section class="title-one">
+        <img src="img/intro-welcome.svg" class="city__welcome" width="459" height="353" alt="Welcome to the gorgoeus Sedona">
       </section>
+
+      <section class="city">
+        <h2 class="city__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="city__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </section>
+
+
+      <!-- <section class="city">
+
+        <h1 class="visually-hidden">Welcome to Sedona</h1>
+
+        <img src="img/intro-welcome.svg" class="city__welcome" width="459" height="353" alt="Welcome to the gorgoeus Sedona">
+
+        <article class="city-description">
+          <h2 class="visually-hidden">О городе Седона</h2>
+          <p class="city__description-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="city__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </article>
+
+      </section> -->
+
+
+      <section>
+=======
+    <main>
+      <section class="city">
+        <h2 class="visually-hidden">Welcome to Sedona</h2>
+        <img src="img/intro-welcome.svg" class="city__welcome" width="459" height="353" alt="Welcome to the gorgoeus Sedona">
+      </section>
+      <section class="about-city">
+        <h2 class="about-city__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="about-city__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+>>>>>>> bf25a3d8aea8f98940ff42f4e28a2efd24d5a1fb
         <ol class="reasons">
-          <li class="reasons reason-1">
-            <p class="reasons-title"><span class="reason-number">№1</span> Настоящий городок</p>
-            <p class="reasons-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <li class="reasons__reason-1">
+            <p class="reasons__title"><span class="reasons__number">№1</span> Настоящий городок</p>
+            <p class="reasons__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <img src="img/feature-picture-1.jpg" width="800" height="256" alt="Фото города Седона">
-            <ul class="reasons city-features">
+            <ul class="reason-1__city-features">
               <li>
-                <p class="reasons-title house">Жильё</p>
-                <p class="reasons-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                <p class="city-features__title city-features__title--house">Жильё</p>
+                <p class="city-features__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
               <li>
-                <p class="reasons-title food">Еда</p>
-                <p class="reasons-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p class="city-features__title city-features__title--food">Еда</p>
+                <p class="city-features__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li>
-                <p class="reasons-title gifts">Сувениры</p>
-                <p class="reasons-description">Не только китайского, но и местного производства!</p>
+                <p class="city-features__title city-features__title--gifts">Сувениры</p>
+                <p class="city-features__description">Не только китайского, но и местного производства!</p>
               </li>
             </ul>
           </li>
-          <li class="reasons reason-2">
+          <li class="reasons__reason-2">
             <img src="img/feature-picture-2.jpg" width="800" height="256" alt="Фото Моста Дьявола в Седоне">
-            <p class="reasons-title"><span>№2</span> Там есть Мост дьявола</p>
-            <p class="reasons-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <p class="reasons__title"><span class="reasons__number">№2</span> Там есть Мост дьявола</p>
+            <p class="reasons__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </li>
-          <li class="reasons reason-3">
-            <p class="reasons-title"><span class="reason-number">№3<span> Небольшая площадь</p>
-            <p class="reasons-description">Все достопримечательности находятся очень близко</p>
+          <li class="reasons__reason-3">
+            <p class="reasons__title"><span class="reasons__number">№3</span> Небольшая площадь</p>
+            <p class="reasons__description">Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="reasons reason-4">
-            <p class="reasons-title"><span class="reason-number">№4</span> Красивая дорога</p>
-            <p class="reasons-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <li class="reasons__reason-4">
+            <p class="reasons__title"><span class="reasons__number">№4</span> Красивая дорога</p>
+            <p class="reasons__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="reasons reason-5">
-            <p class="reasons-title"><span class="reason-number">№5</span> Мало туристов</p>
-            <p class="reasons-description">Большинство едет в гранд каньон и толпится там</p>
+          <li class="reasons__reason-5">
+            <p class="reasons__title"><span class="reasons__number">№5</span> Мало туристов</p>
+            <p class="reasons__description">Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ol>
       </section>
-      <section class="liked-it">
+      <section class="find-hotel">
         <h2 class="visually-hidden">Найти гостиницу в Седоне</h2>
-          <p class="liked-it-title">Заинтересовались?</p>
+          <p class="find-hotel__title">Заинтересовались?</p>
           <p>Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <button class="liked-it-button">Поиск гостиницы в Седоне</button>
+          <button class="find-hotel__button">Поиск гостиницы в Седоне</button>
       </section>
       <section>
         <h2 class="visually-hidden">Седона на карте</h2>
@@ -93,25 +126,25 @@
     </main>
     <footer>
       <div class="contacts">
-        <p>#visitSEDONA</p>
-        <p>Тел: <a href="tel:+7495660266">+7(495) 666-02-66</a></p>
+        <p class="contacts__tag">#visitSEDONA</p>
+        <p class="contacts__phone">Тел: <a href="tel:+7495660266">+7(495) 666-02-66</a></p>
       </div>
       <div class="social">
-        <a class="social-link twitter" href="#" title="twiter link"></a>
-        <a class="social-link fb" href="#" title="facebook link"></a>
-        <a class="social-link youtube" href="#" title="Youtube link"></a>
+        <a class="social-link__twitter" href="#" title="twiter link"></a>
+        <a class="social-link__fb" href="#" title="facebook link"></a>
+        <a class="social-link__youtube" href="#" title="Youtube link"></a>
       </div>
       <div class="developed">
         <p>Website by</p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" title="HTML Academy">
+        <a class="developed__logo" href="https://htmlacademy.ru/intensive/htmlcss" title="HTML Academy">
         </a>
       </div>
     </footer>
-    <section class="search-hotel">
-      <h2 class="search-hotel-tittle">Поиск гостиницы в Седоне</h2>
-      <form class="search-hotel-form" method="post" action="https://echo.htmlacademy.ru">
+    <section class="search-form">
+      <h2 class="search-form__tittle">Поиск гостиницы в Седоне</h2>
+      <form method="post" action="https://echo.htmlacademy.ru">
         <p>
-          <label for="chek-in">Дата заезда</label>
+          <label for="check-in">Дата заезда</label>
           <input type="date" id="check-in" name="check-in-date" value="2017-04-24">
         </p>
         <p>
@@ -126,7 +159,7 @@
           <label for="guests-children">Дети</label>
           <input type="number" id="guests-children" value="0" step="1">
         </p>
-        <button class="search-hotel-button">Найти</button>
+        <button class="search-form__button">Найти</button>
       </form>
     </section>
   </body>
