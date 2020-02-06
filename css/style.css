@@ -15,11 +15,12 @@ a {
 .reason-1__city-features {
   list-style: none;
 }
-
-
-
-
-
+.main-header__nav {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
 .main-header__menu-item:hover,
 .main-header__menu-item:focus {
   color: #81b3d2;
@@ -30,8 +31,12 @@ a {
 .city {
   background-image: url('../img/background-photo.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   color: #333333;
+}
+.about-city {
+  text-align: center;
 }
 .about-city__description {
   background-color: #ffffff;
@@ -195,7 +200,7 @@ a {
   background-color: #ffffff;
 }
 .filter {
-  background-image: url('../img/background-photo.jpg');
+  background-image: url('../img/filter-background.jpg');
   background-position: -3px -450px;
   background-size: cover;
   background-repeat: no-repeat;
