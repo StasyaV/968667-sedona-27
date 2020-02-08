@@ -11,7 +11,7 @@
   <body>
     <header class="main-header">
       <nav class="main-header__nav">
-        <a class="main-header__logo" href="#" title="На главную">
+        <a class="main-header__logo container" href="#" title="На главную">
           <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип города">
         </a>
         <ul class="main-header__menu">
@@ -35,9 +35,11 @@
         <h2 class="visually-hidden">Welcome to Sedona</h2>
         <img src="img/intro-welcome.svg" class="city__welcome" width="459" height="353" alt="Welcome to the gorgoeus Sedona">
       </section>
-      <section class="about-city">
+      <section class="about-city container">
         <h2 class="about-city__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="about-city__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </section>
+      <div class="about-city__reasons">
         <ol class="reasons">
           <li class="reasons__reason-1">
             <p class="reasons__title"><span class="reasons__number">№1</span> Настоящий городок</p>
@@ -76,7 +78,7 @@
             <p class="reasons__description">Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ol>
-      </section>
+      </div>
       <section class="find-hotel">
         <h2 class="visually-hidden">Найти гостиницу в Седоне</h2>
         <p class="find-hotel__title">Заинтересовались?</p>
@@ -89,15 +91,15 @@
         <!-- здесь будет карта -->
       </section>
     </main>
-    <footer>
-      <div class="contacts">
-        <p class="contacts__tag">#visitSEDONA</p>
-        <p class="contacts__phone">Тел: <a href="tel:+7495660266">+7(495) 666-02-66</a></p>
+    <footer class="footer">
+      <div class="footer__contacts">
+        <p class="contacts contacts__tag">#visitSEDONA</p>
+        <p class="contacts contacts__phone">Тел: <a href="tel:+7495660266">+7(495) 666-02-66</a></p>
       </div>
       <div class="social">
-        <a class="social-link__twitter" href="#" title="twiter link"></a>
-        <a class="social-link__fb" href="#" title="facebook link"></a>
-        <a class="social-link__youtube" href="#" title="Youtube link"></a>
+        <a class="social-link social-link__twitter" href="#" title="twiter link"></a>
+        <a class="social-link social-link__fb" href="#" title="facebook link"></a>
+        <a class="social-link social-link__youtube" href="#" title="Youtube link"></a>
       </div>
       <div class="developed">
         <p>Website by</p>

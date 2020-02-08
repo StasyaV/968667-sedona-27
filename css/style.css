@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +12,14 @@ body {
   line-height: 26px;
   color: #000000;
   text-transform: uppercase;
+}
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.visually-hidden {
+  display: none;
 }
 a {
   text-decoration: none;
@@ -29,10 +43,15 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 .city {
-  background-image: url('../img/background-photo.jpg');
+  display: flex;
+  justify-content: center;
+  padding-top: 76px;
+  padding-bottom: 81px;
+  background-image: url('../img/intro-mask.svg'),
+  url('../img/background-photo.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
+  background-position: 0px 447px, center;
+  background-size: contain, cover;
   color: #333333;
 }
 .about-city {
@@ -247,4 +266,37 @@ a {
 .sort-name:active {
   color: #000000;
   border: none;
+}
+.main-header__menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.about-city {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  width: 510px;
+  padding: 10px;
+}
+.about-city__title {
+  margin-bottom: 20px;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+.hotel {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid rgba(0, 1, 1, 0.2);
+  border-right: none;
+  border-left: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
