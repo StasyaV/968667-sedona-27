@@ -26,7 +26,8 @@ a {
 }
 .main-header__menu,
 .reasons,
-.reason-1__city-features {
+.reason-1__city-features,
+.reasons__simple {
   list-style: none;
 }
 .main-header__nav {
@@ -59,7 +60,6 @@ a {
 }
 .about-city__description {
   background-color: #ffffff;
-  height: 216px;
 }
 .about-city__title {
   font-size: 21px;
@@ -270,21 +270,22 @@ a {
 .main-header__menu {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .about-city {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
-  width: 510px;
-  padding: 10px;
+  padding-top: 61px;
+  padding-bottom: 56px;
+  padding-left: 180px;
+  padding-right: 180px;
 }
 .about-city__title {
   margin-bottom: 20px;
 }
 .footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .social {
   display: flex;
@@ -293,11 +294,13 @@ a {
 }
 .hotel {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   border-top: 1px solid rgba(0, 1, 1, 0.2);
-  border-bottom: 1px solid rgba(0, 1, 1, 0.2);
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.hotel-list {
+  border-bottom: 1px solid rgba(0, 1, 1, 0.2);
 }
 .reasons {
   display: flex;
@@ -312,19 +315,19 @@ a {
   width: 100%;
   flex-wrap: wrap;
 }
+.reasons__simple {
+  display: flex;
+  justify-content: space-between;
+}
 .reason-1__city-features {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
 }
 .filer__form {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: nowrap;
-}
-.filter__block {
-  display: flex;
-  justify-content: space-around;
 }
 .sort {
   display: flex;

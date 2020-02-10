@@ -14,7 +14,7 @@
         <a class="main-header__logo" href="#" title="На главную">
           <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип города">
         </a>
-        <ul class="main-header__menu">
+        <ul class="main-header__menu container">
           <li>
             <a class="main-header__menu-item" href="#">Информация</a>
           </li>
@@ -40,23 +40,25 @@
         <p class="about-city__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
       <div class="about-city__reasons">
-        <ol class="reasons">
+        <ul class="reasons">
           <li class="reasons__reason-1">
             <p class="reasons__title"><span class="reasons__number">№1</span> Настоящий городок</p>
             <p class="reasons__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <img src="img/feature-picture-1.jpg" width="800" height="256" alt="Фото города Седона">
-            <ul class="reason-1__city-features">
-              <li>
-                <p class="city-features__title city-features__title--house">Жильё</p>
-                <p class="city-features__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-              </li>
-              <li>
-                <p class="city-features__title city-features__title--food">Еда</p>
-                <p class="city-features__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-              </li>
-              <li>
-                <p class="city-features__title city-features__title--gifts">Сувениры</p>
-                <p class="city-features__description">Не только китайского, но и местного производства!</p>
+            <li class="container">
+              <ul class="reason-1__city-features">
+                <li>
+                  <p class="city-features__title city-features__title--house">Жильё</p>
+                  <p class="city-features__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                </li>
+                <li>
+                  <p class="city-features__title city-features__title--food">Еда</p>
+                  <p class="city-features__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                </li>
+                <li>
+                  <p class="city-features__title city-features__title--gifts">Сувениры</p>
+                  <p class="city-features__description">Не только китайского, но и местного производства!</p>
+                </li>
               </li>
             </ul>
           </li>
@@ -65,19 +67,21 @@
             <p class="reasons__title"><span class="reasons__number">№2</span> Там есть Мост дьявола</p>
             <p class="reasons__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </li>
-          <li class="reasons__reason-3">
-            <p class="reasons__title"><span class="reasons__number">№3</span> Небольшая площадь</p>
-            <p class="reasons__description">Все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="reasons__reason-4">
-            <p class="reasons__title"><span class="reasons__number">№4</span> Красивая дорога</p>
-            <p class="reasons__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="reasons__reason-5">
-            <p class="reasons__title"><span class="reasons__number">№5</span> Мало туристов</p>
-            <p class="reasons__description">Большинство едет в гранд каньон и толпится там</p>
-          </li>
-        </ol>
+          <ul class="reasons__simple container">
+            <li class="reasons__reason-3">
+              <p class="reasons__title"><span class="reasons__number">№3</span> Небольшая площадь</p>
+              <p class="reasons__description">Все достопримечательности находятся очень близко</p>
+            </li>
+            <li class="reasons__reason-4">
+              <p class="reasons__title"><span class="reasons__number">№4</span> Красивая дорога</p>
+              <p class="reasons__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li class="reasons__reason-5">
+              <p class="reasons__title"><span class="reasons__number">№5</span> Мало туристов</p>
+              <p class="reasons__description">Большинство едет в гранд каньон и толпится там</p>
+            </li>
+          </ul>
+        </ul>
       </div>
       <section class="find-hotel">
         <h2 class="visually-hidden">Найти гостиницу в Седоне</h2>
@@ -91,7 +95,7 @@
         <!-- здесь будет карта -->
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer container">
       <div class="footer__contacts">
         <p class="contacts contacts__tag">#visitSEDONA</p>
         <p class="contacts contacts__phone">Тел: <a href="tel:+7495660266">+7(495) 666-02-66</a></p>
@@ -107,7 +111,7 @@
         </a>
       </div>
     </footer>
-    <section class="search-form">
+    <section class="search-form visually-hidden">
       <h2 class="search-form__tittle">Поиск гостиницы в Седоне</h2>
       <form method="post" action="https://echo.htmlacademy.ru">
         <p>
