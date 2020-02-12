@@ -89,10 +89,35 @@
         <p>Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button class="find-hotel__button">Поиск гостиницы в Седоне</button>
+        <section class="search">
+          <h2 class="search-form__tittle visually-hidden">Поиск гостиницы в Седоне</h2>
+          <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
+            <p>
+              <label for="check-in">Дата заезда:</label>
+              <input type="text" id="check-in" name="check-in-date" placeholder="24 апреля 2017">
+            </p>
+            <p>
+              <label for="check-out">Дата выезда:</label>
+              <input type="text" id="check-out" name="check-out-date" placeholder="4 июля 2017">
+            </p>
+            <div class="guest-amount">
+              <p>
+                <label for="guests">Взрослые:</label>
+                <input type="number" id="guests" value="2" min="1" step="1">
+              </p>
+              <p class="guest-amount__children" >
+                <label for="guests-children">Дети:</label>
+                <input type="number" id="guests-children" value="0" step="1">
+              </p>
+            </div>
+            <button class="search-form__button">Найти</button>
+          </form>
+        </section>
       </section>
-      <section>
+      <section style="width: 1200px;height: 593px;">
         <h2 class="visually-hidden">Седона на карте</h2>
-        <!-- здесь будет карта -->
+        <!-- здесь будет карта,
+        добавила временные размеры, чтобы не прилипал футер -->
       </section>
     </main>
     <footer class="footer container">
@@ -111,27 +136,5 @@
         </a>
       </div>
     </footer>
-    <section class="search-form visually-hidden">
-      <h2 class="search-form__tittle">Поиск гостиницы в Седоне</h2>
-      <form method="post" action="https://echo.htmlacademy.ru">
-        <p>
-          <label for="check-in">Дата заезда</label>
-          <input type="date" id="check-in" name="check-in-date" value="2017-04-24">
-        </p>
-        <p>
-          <label for="check-out">Дата выезда</label>
-          <input type="date" id="check-out" name="check-out-date" value="2017-07-04">
-        </p>
-        <p>
-          <label for="guests">Взрослые</label>
-          <input type="number" id="guests" value="2" min="1" step="1">
-        </p>
-        <p>
-          <label for="guests-children">Дети</label>
-          <input type="number" id="guests-children" value="0" step="1">
-        </p>
-        <button class="search-form__button">Найти</button>
-      </form>
-    </section>
   </body>
 </html>
