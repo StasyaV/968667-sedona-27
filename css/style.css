@@ -232,11 +232,25 @@ a {
 .developed__logo:active {
   opacity: 0.3;
 }
-.hotel-info {
+.hotel__info {
   font-size: 14px;
   line-height: 21px;
   text-align: left;
   color: #333333;
+  flex-grow: 1;
+  margin-left: 30px;
+  margin-top: -5px;
+}
+.hotel__type {
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.hotel__type p {
+  margin-right: 39px;
+}
+.hotel__type-of-action {
+  display: flex;
 }
 .hotel__title {
   font-size: 21px;
@@ -252,18 +266,45 @@ a {
 }
 .hotel__raiting-mark {
   font-size: 14px;
-  line-height: 21px;
+  line-height: 27px;
+  width: 110px;
+  display: inline-block;
+  vertical-align: middle;
   text-align: center;
   color: #666666;
   background-color: #f2f2f2;
+  align-self: flex-end;
+}
+.hotel__raiting-star {
+  background-image: url('../img/star.svg');
+  background-repeat: repeat-x;
+  height: 17px;
+  margin-left: 70px;
+}
+.hotel__raiting-star--good {
+  width: 36px;
+}
+.hotel__raiting-star--fine {
+  width: 53px;
+}
+.hotel__raiting-star--best {
+  width: 71px;
+}
+.hotel__raiting {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 37px;
 }
 .hotel__learn-more-button {
   display: inline-block;
   width: 110px;
-  height: 27px;
+  line-height: 27px;
+  vertical-align: middle;
   background-color: #81b3d2;
   color: #ffffff;
   text-align: center;
+  margin-right: 6px;
 }
 .hotel__learn-more-button:hover,
 .hotel__learn-more-button:focus {
@@ -288,6 +329,9 @@ a {
 .hotel__booking-button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
+}
+.hotel-list {
+  margin-bottom: 36px;
 }
 .reasons {
   font-size: 14px;
