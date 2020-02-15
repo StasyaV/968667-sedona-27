@@ -90,15 +90,17 @@
           и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button class="find-hotel__button">Поиск гостиницы в Седоне</button>
         <section class="search">
-          <h2 class="search-form__tittle visually-hidden">Поиск гостиницы в Седоне</h2>
+          <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
           <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
-            <p>
+            <p class="search-form__date">
               <label for="check-in">Дата заезда:</label>
-              <input type="text" id="check-in" name="check-in-date" placeholder="24 апреля 2017" class="search-form__date">
+              <input type="text" id="check-in" name="check-in-date" placeholder="24 апреля 2017">
+              <span class="search-form__date--calendar"></span>
             </p>
-            <p>
+            <p class="search-form__date">
               <label for="check-out">Дата выезда:</label>
-              <input type="text" id="check-out" name="check-out-date" placeholder="4 июля 2017" class="search-form__date">
+              <input type="text" id="check-out" name="check-out-date" placeholder="4 июля 2017">
+              <span class="search-form__date--calendar"></span>
             </p>
             <div class="guest-amount">
               <p>

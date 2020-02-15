@@ -44,6 +44,8 @@ a {
 }
 .main-header__nav {
   text-align: center;
+}
+.main-header__menu-item {
   font-size: 14px;
   font-weight: bold;
   color: #000000;
@@ -55,16 +57,21 @@ a {
 .main-header__menu-item:active {
   color: rgba(0, 0, 0, 0.3);
 }
+.main-header__menu .current {
+  color: #766357;
+}
 .main-header__menu-item {
   display: inline-block;
   line-height: 56px;
   vertical-align: middle;
 }
-.main-header__menu li:nth-last-of-type(2) {
-  margin-left: 100px;
+.main-header__menu li {
+  width: 220px;
+  text-align: left;
 }
-.main-header__menu li:nth-last-of-type(3) {
-  margin-right: 100px;
+.main-header__menu li:nth-of-type(3n),
+.main-header__menu li:nth-of-type(4n) {
+  text-align: right;
 }
 .city {
   display: flex;
@@ -119,7 +126,7 @@ a {
   padding: 55px;
   position: absolute;
   top: 174px;
-  right: 507px;
+  right: 50%;
 }
 .search-form {
   display: flex;
@@ -149,20 +156,26 @@ a {
   border: none;
 }
 .search-form__date {
+  position: relative;
+}
+.search-form__date--calendar {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 21px;
+  height: 22px;
   background-image: url("../img/calendar.png");
   background-repeat: no-repeat;
   background-size: auto;
-  background-position: 317px center;
 
 }
-.search-form__date:hover {
+.search-form__date--calendar:hover {
   background-image: url("../img/calendar-hover.png");
-  background-position: 317px center;
 }
-.search-form__date:active,
-.search-form__date:focus {
+.search-form__date--calendar:active,
+.search-form__date--calendar:focus {
   background-image: url("../img/calendar-active.png");
-  background-position: 315px center;
 }
 .guest-amount {
   display: flex;
@@ -218,6 +231,9 @@ a {
   font-size: 21px;
   line-height: 26px;
 }
+.footer__contacts {
+  margin-right: 160px;
+}
 .social-link {
   display: inline-block;
   width: 46px;
@@ -268,11 +284,10 @@ a {
 }
 .hotel__type {
   display: flex;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-.hotel__type p {
-  margin-right: 39px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  width: 180px;
+  justify-content: space-between;
 }
 .hotel__type-of-action {
   display: flex;
@@ -304,7 +319,7 @@ a {
   background-image: url('../img/star.svg');
   background-repeat: repeat-x;
   height: 17px;
-  margin-left: 70px;
+  align-self: flex-end;
 }
 .hotel__raiting-star--good {
   width: 36px;
@@ -320,6 +335,8 @@ a {
   flex-direction: column;
   justify-content: space-between;
   margin-right: 37px;
+  font-size: 14px;
+  color: #666666;
 }
 .hotel__learn-more-button {
   display: inline-block;
@@ -328,6 +345,8 @@ a {
   vertical-align: middle;
   background-color: #81b3d2;
   color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
   text-align: center;
   margin-right: 6px;
 }
@@ -344,6 +363,8 @@ a {
   height: 27px;
   background-color: #766357;
   color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
   text-transform: uppercase;
   border: none;
 }
@@ -457,13 +478,14 @@ a {
   display: flex;
   justify-content: space-between;
   width: 150px;
+  margin-right: auto;
 }
 .hotel {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid rgba(0, 1, 1, 0.2);
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .hotel-list {
   border-bottom: 1px solid rgba(0, 1, 1, 0.2);
