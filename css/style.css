@@ -62,7 +62,7 @@ a {
 }
 .main-header__menu-item {
   display: inline-block;
-  line-height: 56px;
+  line-height: 52px;
   vertical-align: middle;
 }
 .main-header__menu li {
@@ -78,11 +78,16 @@ a {
   justify-content: center;
   padding-top: 76px;
   padding-bottom: 81px;
-  background-image: url('../img/intro-mask.svg'),
-  url('../img/background-photo.jpg');
+  background-image:
+    url('../img/intro-mask.svg'),
+    url('../img/background-photo.jpg');
   background-repeat: no-repeat;
-  background-position: 0px 435px, 0 -154px;
-  background-size: contain, cover;
+  background-position:
+    left bottom -3px,
+    left top -84px;
+  background-size:
+    contain,
+    100% 800px;
   color: #333333;
 }
 .about-city {
@@ -126,7 +131,8 @@ a {
   padding: 55px;
   position: absolute;
   top: 174px;
-  right: 50%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .search-form {
   display: flex;
@@ -168,14 +174,16 @@ a {
   background-image: url("../img/calendar.png");
   background-repeat: no-repeat;
   background-size: auto;
-
-}
-.search-form__date--calendar:hover {
-  background-image: url("../img/calendar-hover.png");
 }
 .search-form__date--calendar:active,
-.search-form__date--calendar:focus {
+.search-form__date--calendar:focus,
+.search-form input[type="text"]:active + .search-form__date--calendar,
+.search-form input[type="text"]:focus + .search-form__date--calendar {
   background-image: url("../img/calendar-active.png");
+}
+.search-form__date--calendar:hover,
+.search-form input[type="text"]:hover + .search-form__date--calendar {
+  background-image: url("../img/calendar-hover.png");
 }
 .guest-amount {
   display: flex;
@@ -286,8 +294,10 @@ a {
   display: flex;
   margin-bottom: 15px;
   margin-top: 5px;
-  width: 180px;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
+.hotel__type p {
+  min-width: 113px;
 }
 .hotel__type-of-action {
   display: flex;
@@ -424,6 +434,14 @@ a {
   height: 32px;
   border: 2px solif #ffffff;
   color: #ffffff;
+}
+.filter__form {
+  padding: 31px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.filter__block-2 {
+  width: 320px;
 }
 .sort__result {
   font-size: 21px;
