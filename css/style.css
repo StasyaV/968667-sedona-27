@@ -14,7 +14,7 @@ body {
   text-transform: uppercase;
 }
 .container {
-  width: 940px;
+  width: 1080px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -62,7 +62,7 @@ a {
 }
 .main-header__menu-item {
   display: inline-block;
-  line-height: 52px;
+  line-height: 56px;
   vertical-align: middle;
 }
 .main-header__menu li {
@@ -176,6 +176,7 @@ a {
   background-size: auto;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 .search-form__date--calendar:active,
 .search-form__date--calendar:focus,
@@ -477,7 +478,12 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: -75px;
+}
+.main-header__logo {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
 }
 .about-city {
   display: flex;
@@ -521,7 +527,7 @@ a {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .reasons__simple {
   display: flex;
@@ -539,4 +545,35 @@ a {
 }
 .sort {
   display: flex;
+}
+.reasons__description-block {
+  margin: auto 60px;
+  flex-grow: 1;
+}
+.reasons__title {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-bottom: 20px;
+}
+.reasons__number {
+  padding-top: 20px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.reasons__number::before,
+.reasons__number::after {
+  content: "";
+    display: inline-block;
+    background-color: #ffffff;
+    width: 10px;
+    height: 1px;
+    line-height: 1px;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+.city-features {
+  margin: 60px 50px;
+}
+.reason-1__city-features .city-features__title {
+  padding-bottom: 31px;
 }

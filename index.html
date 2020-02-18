@@ -11,9 +11,6 @@
   <body>
     <header class="main-header">
       <nav class="main-header__nav">
-        <a class="main-header__logo" href="#" title="На главную">
-          <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип города">
-        </a>
         <ul class="main-header__menu container">
           <li>
             <a class="main-header__menu-item" href="#">Информация</a>
@@ -28,6 +25,9 @@
             <a class="main-header__menu-item" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
+        <a class="main-header__logo" href="#" title="На главную">
+          <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип города">
+        </a>
       </nav>
     </header>
     <main>
@@ -42,20 +42,22 @@
       <div class="about-city__reasons">
         <ul class="reasons">
           <li class="reasons__reason-1">
-            <p class="reasons__title"><span class="reasons__number">№1</span> Настоящий городок</p>
-            <p class="reasons__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <div class="reasons__description-block">
+              <p class="reasons__title"><span class="reasons__number">№1</span> Настоящий<br> городок</p>
+              <p class="reasons__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
             <img src="img/feature-picture-1.jpg" width="800" height="256" alt="Фото города Седона">
-            <li class="container">
+            <li>
               <ul class="reason-1__city-features">
-                <li>
+                <li class="city-features">
                   <p class="city-features__title city-features__title--house">Жильё</p>
                   <p class="city-features__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </li>
-                <li>
+                <li class="city-features">
                   <p class="city-features__title city-features__title--food">Еда</p>
                   <p class="city-features__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
-                <li>
+                <li class="city-features">
                   <p class="city-features__title city-features__title--gifts">Сувениры</p>
                   <p class="city-features__description">Не только китайского, но и местного производства!</p>
                 </li>
@@ -64,8 +66,10 @@
           </li>
           <li class="reasons__reason-2">
             <img src="img/feature-picture-2.jpg" width="800" height="256" alt="Фото Моста Дьявола в Седоне">
-            <p class="reasons__title"><span class="reasons__number">№2</span> Там есть Мост дьявола</p>
-            <p class="reasons__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <div class="reasons__description-block">
+              <p class="reasons__title"><span class="reasons__number">№2</span> Там есть<br> Мост дьявола</p>
+              <p class="reasons__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
           </li>
           <ul class="reasons__simple container">
             <li class="reasons__reason-3">
