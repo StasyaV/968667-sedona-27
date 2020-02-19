@@ -107,13 +107,17 @@
               <button type="button" class="search-form__date--calendar"></button>
             </p>
             <div class="guest-amount">
-              <p>
+              <p class="amount guest-amount__older">
                 <label for="guests">Взрослые:</label>
-                <input type="number" id="guests" value="2" min="1" step="1">
+                <input type="text" id="guests" placeholder="2">
+                <button type="button" class="button-amount minus"></button>
+                <button type="button" class="button-amount plus"></button>
               </p>
-              <p class="guest-amount__children" >
+              <p class="amount guest-amount__children">
                 <label for="guests-children">Дети:</label>
-                <input type="number" id="guests-children" value="0" step="1">
+                <input type="text" id="guests-children" placeholder="0">
+                <button type="button" class="button-amount minus"></button>
+                <button type="button" class="button-amount plus"></button>
               </p>
             </div>
             <button class="search-form__button">Найти</button>

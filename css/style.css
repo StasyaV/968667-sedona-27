@@ -203,13 +203,64 @@ a {
   justify-content: space-between;
   margin-bottom: 25px;
 }
-.guest-amount input {
-  width: 115px;
+.guest-amount input[type="text"] {
+  width: 105px;
   padding: 6px;
   margin-left: 40px;
 }
-.guest-amount__children input {
-  margin-left: 23px;
+.guest-amount__children input[type="text"] {
+  margin-left: 25px;
+}
+.guest-amount input[type="text"]::placeholder {
+  text-align: center;
+  line-height: 38px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.amount {
+  position: relative;
+}
+.minus::before {
+  content: "";
+  width: 12px;
+  height: 3px;
+  background-color: #a9a9a9;
+  position: absolute;
+  left: 130px;
+  top: 18px;
+  border: none;
+  cursor: pointer;
+}
+.plus::after {
+  content: "+";
+  font-size: 25px;
+  font-weight: bold;
+  color: #a9a9a9;
+  position: absolute;
+  left: 203px;
+  top: 4px;
+  border: none;
+  cursor: pointer;
+}
+.guest-amount__children .minus::before {
+  left: 78px;
+}
+.guest-amount__children .plus::after {
+  left: 154px;
+}
+.minus:hover::before,
+.minus:focus::before {
+  background-color: #000000;
+}
+.plus:hover::after,
+.plus:focus::after {
+  color: #000000;
+}
+.minus:active::before {
+  background-color: #81b3d2;
+}
+.plus:active::after {
+  color: #81b3d2;
 }
 .search-form label {
   display: inline-block;
@@ -438,16 +489,17 @@ a {
 .filter__title {
   font-size: 16px;
   font-weight: bold;
-  padding-bottom: 17px;
+  padding-bottom: 15px;
 }
 .filter__button {
   background-color: transparent;
   font-size: 14px;
   text-transform: uppercase;
-  width: 133px;
-  height: 32px;
-  border: 2px solif #ffffff;
+  width: 136px;
+  height: 35px;
+  border: 2px solid #ffffff;
   color: #ffffff;
+  margin-left: 96px;
 }
 .filter__form {
   padding-top: 25px;
@@ -455,6 +507,11 @@ a {
 }
 .filter__block-2 {
   width: 320px;
+  margin-left: auto;
+  margin-right: 10px;
+}
+.filter__block-2 .filter__title {
+  padding-bottom: 0;
 }
 .sort__result {
   font-size: 21px;
@@ -689,19 +746,22 @@ input[type="checkbox"]:checked + label::before {
 }
 .filter__features-group {
   border: none;
-  margin-right: 102px;
+  margin-right: 105px;
+  margin-left: -8px;
 }
 .filter__features-group p {
   padding-bottom: 15px;
 }
 .filter__price {
   border: none;
+  margin-bottom: 15px;
 }
 .price {
   border: 2px solid #ffffff;
-  width: 157px;
-  height: 32px;
+  width: 159px;
+  height: 37px;
   background-color: transparent;
+  margin-bottom: 5px;
 }
 .price--min {
   border-right: none;
@@ -714,7 +774,6 @@ input[type="checkbox"]:checked + label::before {
   width: 2px;
   height: 22px;
   background-color: #ffffff;
-  position: absolute;
 }
 .price::placeholder {
   font-size: 14px;
@@ -733,6 +792,31 @@ input[type="checkbox"]:checked + label::before {
   background-image: url("../img/filter-button.svg");
   background-repeat: no-repeat;
   width: 22px;
-  height: 24px;
+  height: 21px;
+  line-height: 22px;
+  vertical-align: middle;
   display: inline-block;
+}
+.toggle-left::after {
+  content: "";
+  display: inline-block;
+  line-height: 22px;
+  vertical-align: middle;
+  width: 250px;
+  height: 2px;
+  background-color: #ffffff;
+  opacity: 1;
+}
+.toggle-right::before {
+  content: "";
+  display: inline-block;
+  line-height: 22px;
+  vertical-align: middle;
+  width: 65px;
+  height: 2px;
+  background-color: #ffffff;
+  opacity: 0.3;
+}
+.toggle-right {
+  margin-left: 228px;
 }
