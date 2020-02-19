@@ -20,8 +20,7 @@ body {
 }
 .visually-hidden,
 .visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+input[type="checkbox"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -142,6 +141,7 @@ a {
   top: 243px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1;
 }
 .search-form {
   display: flex;
@@ -438,6 +438,7 @@ a {
 .filter__title {
   font-size: 16px;
   font-weight: bold;
+  padding-bottom: 17px;
 }
 .filter__button {
   background-color: transparent;
@@ -449,9 +450,8 @@ a {
   color: #ffffff;
 }
 .filter__form {
-  padding: 31px 0;
+  padding-top: 25px;
   display: flex;
-  justify-content: space-between;
 }
 .filter__block-2 {
   width: 320px;
@@ -670,4 +670,69 @@ a {
 }
 .footer__contacts {
   margin-bottom: 32px;
+}
+.map {
+  margin-bottom: 36px;
+}
+input[type="checkbox"] + label::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+  background-image: url('../img/checkbox-off.svg');
+  background-repeat: no-repeat;
+}
+input[type="checkbox"]:checked + label::before {
+  background-image: url('../img/checkbox-on.svg');
+}
+.filter__features-group {
+  border: none;
+  margin-right: 102px;
+}
+.filter__features-group p {
+  padding-bottom: 15px;
+}
+.filter__price {
+  border: none;
+}
+.price {
+  border: 2px solid #ffffff;
+  width: 157px;
+  height: 32px;
+  background-color: transparent;
+}
+.price--min {
+  border-right: none;
+}
+.price--max {
+  border-left: none;
+}
+.price--min::after {
+  content: "";
+  width: 2px;
+  height: 22px;
+  background-color: #ffffff;
+  position: absolute;
+}
+.price::placeholder {
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 32px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.filter__price-per-day {
+  display: flex;
+  position: relative;
+}
+.toggle {
+  background-image: url("../img/filter-button.svg");
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 24px;
+  display: inline-block;
 }

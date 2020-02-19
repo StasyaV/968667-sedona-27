@@ -36,46 +36,44 @@
         <h2 class="visually-hidden">Уточнить параметры поиска</h2>
         <form class="filter__form container" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="filter__features-group">
-            <legend class="filter__title">Инфраструктура</legend>
+            <legend class="filter__title">Инфраструктура:</legend>
             <p>
-              <input type="checkbox" id="swimming-pool" name="swimming-pool" checked>
+              <input class="visually-hidden" type="checkbox" id="swimming-pool" name="swimming-pool" checked>
               <label for="swimming-pool">Бассейн</label>
             </p>
             <p>
-              <input type="checkbox" id="parking" name="parking">
+              <input class="visually-hidden" type="checkbox" id="parking" name="parking">
               <label for="parking">Парковка</label>
             </p>
             <p>
-              <input type="checkbox" id="wi-fi" name="wi-fi">
+              <input class="visually-hidden" type="checkbox" id="wi-fi" name="wi-fi">
               <label for="wi-fi">Wi-fi</label>
             </p>
           </fieldset>
           <fieldset class="filter__features-group">
-            <legend>Тип жилья</legend>
+            <legend class="filter__title">Тип жилья:</legend>
             <p>
-              <input type="checkbox" id="hotel" name="hotel" checked>
+              <input class="visually-hidden" type="checkbox" id="hotel" name="hotel" checked>
               <label for="hotel">Гостиницы</label>
             </p>
             <p>
-              <input type="checkbox" id="motel" name="motel" checked>
+              <input class="visually-hidden" type="checkbox" id="motel" name="motel" checked>
               <label for="motel">Мотель</label>
             </p>
             <p>
-              <input type="checkbox" id="appartment" name="appartment" checked>
+              <input class="visually-hidden" type="checkbox" id="appartment" name="appartment" checked>
               <label for="appartment">Аппартаменты</label>
             </p>
           </fieldset class="filter__features-group">
           <div class="filter__block-2">
-            <fieldset>
-              <legend class="visually-hidden">Цена</legend>
-              <label for="price-per-day">Стоимость в сутки(р):</label>
-              <label class="min-price">
-                <input name="min-price" type="text" value="от 0р">
+            <fieldset class="filter__price">
+              <legend class="filter__title">Стоимость в сутки(р):</legend>
+              <label class="filter__price-per-day" for="price-per-day">
+                <input class="price price--min" id="price-per-day" name="min-price" type="text" placeholder="от 0">
+                <input class="price price--max" id="price-per-day" name="max-price" type="text" placeholder="до 3000">
               </label>
-              <label class="max-price">
-                <input name="max-price" type="text" value="до 3000р">
-              </label>
-              <input type="range" id="price-per-day" name="price-per-day" min="0" max="4000" step="1">
+              <div class="toggle toggle-right"></div>
+              <div class="toggle toggle-right"></div>
             </fieldset>
             <button class="filter__button" type="submit">
               Показать
