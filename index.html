@@ -61,16 +61,16 @@
                   <p class="city-features__title city-features__title--gifts">Сувениры</p>
                   <p class="city-features__description">Не только китайского, но и местного производства!</p>
                 </li>
-              </li>
-            </ul>
-          </li>
-          <li class="reasons__reason-2">
-            <img src="img/feature-picture-2.jpg" width="800" height="256" alt="Фото Моста Дьявола в Седоне">
-            <div class="reasons__description-block">
-              <p class="reasons__title"><span class="reasons__number">№2</span> Там есть<br> Мост дьявола</p>
-              <p class="reasons__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-            </div>
-          </li>
+              </ul>
+            </li>
+            <li class="reasons__reason-2">
+              <img src="img/feature-picture-2.jpg" width="800" height="256" alt="Фото Моста Дьявола в Седоне">
+              <div class="reasons__description-block">
+                <p class="reasons__title"><span class="reasons__number">№2</span> Там есть<br> Мост дьявола</p>
+                <p class="reasons__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              </div>
+            </li>
+          </ul>
           <ul class="reasons__simple">
             <li class="simple reasons__reason-3">
               <p class="reasons__title"><span class="reasons__number">№3</span> Небольшая<br> площадь</p>
@@ -85,66 +85,65 @@
               <p class="reasons__description">Большинство едет в гранд каньон и толпится там</p>
             </li>
           </ul>
-        </ul>
-      </div>
-      <section class="find-hotel">
-        <h2 class="visually-hidden">Найти гостиницу в Седоне</h2>
-        <p class="find-hotel__title">Заинтересовались?</p>
-        <p>Укажите предполагаемые даты поездки,<br>
-          и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button class="find-hotel__button">Поиск гостиницы в Седоне</button>
-        <section class="search">
-          <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-          <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
-            <p class="search-form__date">
-              <label for="check-in">Дата заезда:</label>
-              <input type="text" id="check-in" name="check-in-date" placeholder="24 апреля 2017">
-              <button type="button" class="search-form__date--calendar"></button>
-            </p>
-            <p class="search-form__date">
-              <label for="check-out">Дата выезда:</label>
-              <input type="text" id="check-out" name="check-out-date" placeholder="4 июля 2017">
-              <button type="button" class="search-form__date--calendar"></button>
-            </p>
-            <div class="guest-amount">
-              <p class="amount guest-amount__older">
-                <label for="guests">Взрослые:</label>
-                <input type="text" id="guests" placeholder="2">
-                <button type="button" class="button-amount minus"></button>
-                <button type="button" class="button-amount plus"></button>
+        </div>
+        <section class="find-hotel">
+          <h2 class="visually-hidden">Найти гостиницу в Седоне</h2>
+          <p class="find-hotel__title">Заинтересовались?</p>
+          <p>Укажите предполагаемые даты поездки,<br>
+            и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <button class="find-hotel__button">Поиск гостиницы в Седоне</button>
+          <section class="search">
+            <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+            <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
+              <p class="search-form__date">
+                <label for="check-in">Дата заезда:</label>
+                <input type="text" id="check-in" name="check-in-date" placeholder="24 апреля 2017">
+                <button type="button" class="search-form__date--calendar"></button>
               </p>
-              <p class="amount guest-amount__children">
-                <label for="guests-children">Дети:</label>
-                <input type="text" id="guests-children" placeholder="0">
-                <button type="button" class="button-amount minus"></button>
-                <button type="button" class="button-amount plus"></button>
+              <p class="search-form__date">
+                <label for="check-out">Дата выезда:</label>
+                <input type="text" id="check-out" name="check-out-date" placeholder="4 июля 2017">
+                <button type="button" class="search-form__date--calendar"></button>
               </p>
-            </div>
-            <button class="search-form__button">Найти</button>
-          </form>
+              <div class="guest-amount">
+                <p class="amount guest-amount__older">
+                  <label for="guests">Взрослые:</label>
+                  <button type="button" class="button-amount minus"></button>
+                  <input type="text" id="guests" placeholder="2">
+                  <button type="button" class="button-amount plus"></button>
+                </p>
+                <p class="amount guest-amount__children">
+                  <label for="guests-children">Дети:</label>
+                  <button type="button" class="button-amount minus"></button>
+                  <input type="text" id="guests-children" placeholder="0">
+                  <button type="button" class="button-amount plus"></button>
+                </p>
+              </div>
+              <button class="search-form__button">Найти</button>
+            </form>
+          </section>
         </section>
-      </section>
-      <section class="map">
-        <h2 class="visually-hidden">Седона на карте</h2>
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac2585daa4289f1aa20b69e445c1af6a725841837a4a0dfefc58f6061d02c6bb3&amp;width=100%25&amp;height=593&amp;lang=ru_RU&amp;scroll=true&amp;apikey=48fcd2cf-27b8-4e72-92fa-836d2d98383b">
-        </script>
-      </section>
-    </main>
-    <footer class="footer container">
-      <div class="footer__contacts">
-        <p class="contacts contacts__tag">#visitSEDONA</p>
-        <p class="contacts contacts__phone">Тел: <a href="tel:+7495660266">+7(495) 666-02-66</a></p>
-      </div>
-      <div class="social">
-        <a class="social-link social-link__twitter" href="#" title="twiter link"></a>
-        <a class="social-link social-link__fb" href="#" title="facebook link"></a>
-        <a class="social-link social-link__youtube" href="#" title="Youtube link"></a>
-      </div>
-      <div class="developed">
-        <p>Website by</p>
-        <a class="developed__logo" href="https://htmlacademy.ru/intensive/htmlcss" title="HTML Academy">
-        </a>
-      </div>
-    </footer>
-  </body>
-</html>
+        <section class="map">
+          <h2 class="visually-hidden">Седона на карте</h2>
+          <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac2585daa4289f1aa20b69e445c1af6a725841837a4a0dfefc58f6061d02c6bb3&amp;width=100%25&amp;height=468&amp;lang=ru_RU&amp;scroll=true&amp;apikey=48fcd2cf-27b8-4e72-92fa-836d2d98383b">
+          </script>
+        </section>
+      </main>
+      <footer class="footer container">
+        <div class="footer__contacts">
+          <p class="contacts contacts__tag">#visitSEDONA</p>
+          <p class="contacts contacts__phone">Тел: <a href="tel:+7495660266">+7(495) 666-02-66</a></p>
+        </div>
+        <div class="social">
+          <a class="social-link social-link__twitter" href="#" title="twiter link"></a>
+          <a class="social-link social-link__fb" href="#" title="facebook link"></a>
+          <a class="social-link social-link__youtube" href="#" title="Youtube link"></a>
+        </div>
+        <div class="developed">
+          <p>Website by</p>
+          <a class="developed__logo" href="https://htmlacademy.ru/intensive/htmlcss" title="HTML Academy">
+          </a>
+        </div>
+      </footer>
+    </body>
+  </html>

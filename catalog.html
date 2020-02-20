@@ -64,14 +64,14 @@
               <input class="visually-hidden" type="checkbox" id="appartment" name="appartment" checked>
               <label for="appartment">Аппартаменты</label>
             </p>
-          </fieldset class="filter__features-group">
+          </fieldset>
           <div class="filter__block-2">
             <fieldset class="filter__price">
               <legend class="filter__title">Стоимость в сутки(р):</legend>
-              <label class="filter__price-per-day" for="price-per-day">
-                <input class="price price--min" id="price-per-day" name="min-price" type="text" placeholder="от 0">
-                <input class="price price--max" id="price-per-day" name="max-price" type="text" placeholder="до 3000">
-              </label>
+              <div class="filter__price-per-day">
+                <input class="price price--min" id="price-per-day-min" name="min-price" type="text" placeholder="от 0">
+                <input class="price price--max" id="price-per-day-max" name="max-price" type="text" placeholder="до 3000">
+              </div>
               <div class="toggle toggle-left"></div>
               <div class="toggle toggle-right"></div>
             </fieldset>
@@ -90,63 +90,69 @@
           <a class="sort-name sort-name__type" href="#">По типу</a>
           <a class="sort-name sort-name__raiting" href="#">По рейнигу</a>
           <div class="search__sort-type">
-            <a href="#" class="search__sort-type--up"></a>
-            <a href="#" class="search__sort-type--down"></a>
+            <a href="#" class="search__sort-type--up" title="Сортировка по возрастанию"></a>
+            <a href="#" class="search__sort-type--down" title="Сортировка по убыванию"></a>
           </div>
         </div>
-        <div class="hotel-list container">
-          <article class="hotel">
-            <img src="img/hotel-amara.jpg" width="135" height="90" alt="Amara Resort & Spa hotel photo">
-            <div class="hotel__info">
-              <h3 class="hotel__title">Amara Resort & Spa</h3>
-              <div class="hotel__type">
-                <p>Гостиница</p>
-                <p>от 4000 р.</p>
+        <div class="hotel-list">
+          <article class="hotel-border">
+            <div class="hotel container">
+              <img src="img/hotel-amara.jpg" width="135" height="90" alt="Amara Resort & Spa hotel photo">
+              <div class="hotel__info">
+                <h3 class="hotel__title">Amara Resort & Spa</h3>
+                <div class="hotel__type">
+                  <p>Гостиница</p>
+                  <p>от 4000 р.</p>
+                </div>
+                <div class="hotel__type-of-action">
+                  <a href="#" class="hotel__learn-more-button">Подробнее</a>
+                  <button class="hotel__booking-button">Забронировать</button>
+                </div>
               </div>
-              <div class="hotel__type-of-action">
-                <a href="#" class="hotel__learn-more-button">Подробнее</a>
-                <button class="hotel__booking-button">Забронировать</button>
+              <div class="hotel__raiting">
+                <div class="hotel__raiting-star hotel__raiting-star--best"></div>
+                <p class="hotel__raiting-mark">Рейтинг 8,5</p>
               </div>
-            </div>
-            <div class="hotel__raiting">
-              <div class="hotel__raiting-star hotel__raiting-star--best"></div>
-              <p class="hotel__raiting-mark">Рейтинг 8,5</p>
             </div>
           </article>
-          <article class="hotel">
-            <img src="img/hotel-desert.jpg" width="135" height="90" alt="Desert Quail Inn motel photo">
-            <div class="hotel__info">
-              <h3 class="hotel__title">Desert Quail Inn</h3>
-              <div class="hotel__type">
-                <p>Мотель</p>
-                <p>от 3000 р.</p>
+          <article class="hotel-border">
+            <div class="hotel container">
+              <img src="img/hotel-desert.jpg" width="135" height="90" alt="Desert Quail Inn motel photo">
+              <div class="hotel__info">
+                <h3 class="hotel__title">Desert Quail Inn</h3>
+                <div class="hotel__type">
+                  <p>Мотель</p>
+                  <p>от 3000 р.</p>
+                </div>
+                <div class="hotel__type-of-action">
+                  <a href="#" class="hotel__learn-more-button">Подробнее</a>
+                  <button class="hotel__booking-button">Забронировать</button>
+                </div>
               </div>
-              <div class="hotel__type-of-action">
-                <a href="#" class="hotel__learn-more-button">Подробнее</a>
-                <button class="hotel__booking-button">Забронировать</button>
+              <div class="hotel__raiting">
+                <div class="hotel__raiting-star hotel__raiting-star--fine"></div>
+                <p class="hotel__raiting-mark">Рейтинг 8,9</p>
               </div>
-            </div>
-            <div class="hotel__raiting">
-              <div class="hotel__raiting-star hotel__raiting-star--fine"></div>
-              <p class="hotel__raiting-mark">Рейтинг 8,9</p>
             </div>
           </article>
-          <article class="hotel">
-            <img src="img/hotel-villas.jpg" width="135" height="90" alt="Villas at Poco Diablo appartment photo">
-            <div class="hotel__info">
-              <h3 class="hotel__title">Villas at Poco Diablo</h3>
-              <div class="hotel__type">
-                <p>Аппартаменты</p>
-                <p>от 2000 р.</p>
+          <article class="hotel-border">
+            <div class="hotel container">
+              <img src="img/hotel-villas.jpg" width="135" height="90" alt="Villas at Poco Diablo appartment photo">
+              <div class="hotel__info">
+                <h3 class="hotel__title">Villas at Poco Diablo</h3>
+                <div class="hotel__type">
+                  <p>Аппартаменты</p>
+                  <p>от 2000 р.</p>
+                </div>
+                <div class="hotel__type-of-action">
+                  <a href="#" class="hotel__learn-more-button">Подробнее</a>
+                  <button class="hotel__booking-button">Забронировать</button>
+                </div>
               </div>
-              <div class="hotel__type-of-action">
-                <a href="#" class="hotel__learn-more-button">Подробнее</a>
-                <button class="hotel__booking-button">Забронировать</button>
+              <div class="hotel__raiting">
+                <div class="hotel__raiting-star hotel__raiting-star--good"></div>
+                <p class="hotel__raiting-mark">Рейтинг 9,2</p>
               </div>
-            </div>
-            <div class="hotel__raiting">
-              <div class="hotel__raiting-star hotel__raiting-star--good"></div>
-              <p class="hotel__raiting-mark">Рейтинг 9,2</p>
             </div>
           </article>
         </div>
