@@ -879,7 +879,16 @@ input[type="checkbox"]:disbled + label::before {
   margin-right: 13px;
 }
 .search__sort-type--down {
+  background-image: url("../img/icon-up-dir.png");
+  background-repeat: no-repeat;
+  width: 11px;
+  height: 10px;
+  margin-right: 13px;
+  transform: rotate(180deg);
+}
+.search__sort-type--active {
   background-image: url("../img/icon-down-dir.png");
   width: 11px;
   height: 10px;
+  transform: rotate(0deg);
 }
