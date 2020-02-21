@@ -673,10 +673,14 @@ a {
   margin: 0 5px;
 }
 .city-features {
-  margin: 60px 50px;
+  margin-top: 62px;
+  margin-bottom: 60px;
   display: flex;
   flex-direction: column;
   position: relative;
+  padding-left: 66px;
+  padding-right: 66px;
+  min-width: 400px;
 }
 .reason-1__city-features .city-features__title {
   padding-bottom: 18px;
@@ -719,6 +723,7 @@ a {
   transform: translateX(-50%);
 }
  .simple {
+   text-align: center;
    padding-top: 45px;
    padding-left: 60px;
    padding-right: 74px;
