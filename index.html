@@ -11,6 +11,9 @@
   <body>
     <header class="main-header">
       <nav class="main-header__nav">
+        <a class="main-header__logo" href="#" title="На главную">
+          <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип города">
+        </a>
         <ul class="main-header__menu container">
           <li>
             <a class="main-header__menu-item" href="#">Информация</a>
@@ -25,9 +28,6 @@
             <a class="main-header__menu-item" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <a class="main-header__logo" href="#" title="На главную">
-          <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип города">
-        </a>
       </nav>
     </header>
     <main>
@@ -47,7 +47,7 @@
               <p class="reasons__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <img src="img/feature-picture-1.jpg" width="800" height="256" alt="Фото города Седона">
-            <li>
+            <li class="container">
               <ul class="reason-1__city-features">
                 <li class="city-features">
                   <p class="city-features__title city-features__title--house">Жильё</p>
@@ -71,7 +71,7 @@
               </div>
             </li>
           </ul>
-          <ul class="reasons__simple">
+          <ul class="reasons__simple container">
             <li class="simple reasons__reason-3">
               <p class="reasons__title"><span class="reasons__number">№3</span> Небольшая<br> площадь</p>
               <p class="reasons__description">Все достопримечательности находятся очень близко</p>
@@ -86,7 +86,7 @@
             </li>
           </ul>
         </div>
-        <section class="find-hotel">
+        <section class="find-hotel container">
           <h2 class="visually-hidden">Найти гостиницу в Седоне</h2>
           <p class="find-hotel__title">Заинтересовались?</p>
           <p>Укажите предполагаемые даты поездки,<br>
@@ -98,25 +98,25 @@
               <p class="search-form__date">
                 <label for="check-in">Дата заезда:</label>
                 <input type="text" id="check-in" name="check-in-date" placeholder="24 апреля 2017">
-                <button type="button" class="search-form__date--calendar"></button>
+                <button type="button" class="search-form__date--calendar" title="Выбрать дату"></button>
               </p>
               <p class="search-form__date">
                 <label for="check-out">Дата выезда:</label>
                 <input type="text" id="check-out" name="check-out-date" placeholder="4 июля 2017">
-                <button type="button" class="search-form__date--calendar"></button>
+                <button type="button" class="search-form__date--calendar" title="Выбрать дату"></button>
               </p>
               <div class="guest-amount">
                 <p class="amount guest-amount__older">
                   <label for="guests">Взрослые:</label>
-                  <button type="button" class="button-amount minus"></button>
+                  <button type="button" class="button-amount minus" title="Уменьшить количество гостей"></button>
                   <input type="text" id="guests" placeholder="2">
-                  <button type="button" class="button-amount plus"></button>
+                  <button type="button" class="button-amount plus" title="Увеличить количество гостей"></button>
                 </p>
                 <p class="amount guest-amount__children">
                   <label for="guests-children">Дети:</label>
-                  <button type="button" class="button-amount minus"></button>
+                  <button type="button" class="button-amount minus" title="Уменьшить количество детей"></button>
                   <input type="text" id="guests-children" placeholder="0">
-                  <button type="button" class="button-amount plus"></button>
+                  <button type="button" class="button-amount plus" title="Увеличить количество детей"></button>
                 </p>
               </div>
               <button class="search-form__button">Найти</button>
@@ -125,7 +125,7 @@
         </section>
         <section class="map">
           <h2 class="visually-hidden">Седона на карте</h2>
-          <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac2585daa4289f1aa20b69e445c1af6a725841837a4a0dfefc58f6061d02c6bb3&amp;width=100%25&amp;height=468&amp;lang=ru_RU&amp;scroll=true&amp;apikey=48fcd2cf-27b8-4e72-92fa-836d2d98383b">
+          <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac2585daa4289f1aa20b69e445c1af6a725841837a4a0dfefc58f6061d02c6bb3&amp;width=100%25&amp;height=472&amp;lang=ru_RU&amp;scroll=true&amp;apikey=48fcd2cf-27b8-4e72-92fa-836d2d98383b">
           </script>
         </section>
       </main>
