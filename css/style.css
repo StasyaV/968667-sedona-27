@@ -767,9 +767,13 @@ input[type="checkbox"] + label::before {
 input[type="checkbox"]:checked + label::before {
   background-image: url('../img/checkbox-on.svg');
 }
-/* input[type="checkbox"]:hover + label::before {
+input[type="checkbox"]:hover + label::before,
+input[type="checkbox"]:focus + label::before {
   background-image: url('../img/checkbox-off.svg');
-} */
+}
+input[type="checkbox"]:checked:hover + label::before {
+  background-image: url('../img/checkbox-on.svg');
+}
 input[type="checkbox"]:disbled + label::before {
   opacity: 0.3;
 }
