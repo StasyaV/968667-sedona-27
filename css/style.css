@@ -120,12 +120,14 @@ a {
   font-size: 30px;
   font-weight: bold;
   line-height: 36px;
-  padding-bottom: 21px;
+  margin-bottom: 21px;
+}
+.find-hotel__description {
+  margin-bottom: 45px;
 }
 .find-hotel__button {
   width: 568px;
   height: 86px;
-  margin-top: 44px;
 
   font-size: 21px;
   line-height: 26px;
@@ -142,7 +144,6 @@ a {
 }
 .search {
   position: absolute;
-  top: 288px;
   left: 50%;
   z-index: 1;
 
@@ -166,7 +167,6 @@ a {
 .search-form p {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 28px;
 }
 .search-form input[type="text"] {
   width: 346px;
@@ -188,6 +188,7 @@ a {
 }
 .search-form__date {
   position: relative;
+  margin-bottom: 28px;
 }
 .search-form__date--calendar {
   position: absolute;
@@ -219,7 +220,7 @@ a {
 .guest-amount {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
+  margin-bottom: 54px;
 }
 .guest-amount input[type="text"] {
   width: 38px;
@@ -261,7 +262,6 @@ a {
   height: 3px;
 
   background-color: #a9a9a9;
-
   border: none;
 
   cursor: pointer;
@@ -344,6 +344,13 @@ a {
 .contacts {
   font-size: 21px;
   line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+}
+.contacts a {
+  font-size: 21px;
+  font-weight: bold;
+  color: #000000;
 }
 .footer__contacts {
   margin-right: 179px;
@@ -376,10 +383,10 @@ a {
 .developed__logo {
   display: inline-block;
   width: 115px;
-  height: 41px;
+  height: 48px;
 
   background-image: url('../img/logo-htmlacademy.png');
-  background-position: center center;
+  background-position: center 4px;
   background-repeat: no-repeat;
 }
 .developed__logo:hover,
@@ -540,12 +547,12 @@ a {
   color: #ffffff;
 
   background-image: url('../img/filter-background.jpg');
-  background-position: 0 -450px;
+  background-position: 0 -300px;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .filter__title {
-  padding-bottom: 15px;
+  margin-bottom: 15px;
 
   font-size: 16px;
   font-weight: bold;
@@ -586,7 +593,7 @@ a {
   margin-right: 10px;
 }
 .filter__block-2 .filter__title {
-  padding-bottom: 3px;
+  margin-bottom: 5px;
 }
 .sort__result {
   font-size: 21px;
@@ -690,14 +697,15 @@ a {
 .reasons__simple {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 50px;
 
   background-color: #eeeeee;
 }
 .reason-1__city-features {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 75px;
-  padding-top: 97px;
+  padding-top: 60px;
+  margin-bottom: 73px;
 }
 .filer__form {
   display: flex;
@@ -759,16 +767,18 @@ a {
   display: flex;
   flex-direction: column;
   min-width: 400px;
-  padding-top: 62px;
-  padding-left: 55px;
-  padding-right: 51px;
+  padding-top: 101px;
+}
+.city-features p {
+  max-width: 252px;
+  margin: 0 auto;
 }
 .reason-1__city-features .city-features__title {
   padding-bottom: 18px;
 }
 .city-features__title--house::before {
   position: absolute;
-  top: -36px;
+  top: 0px;
   left: 201px;
 
   content: "";
@@ -780,11 +790,10 @@ a {
   background-repeat: no-repeat;
 
   transform: translateX(-50%);
-
 }
 .city-features__title--food::before {
   position: absolute;
-  top: -36px;
+  top: 0px;
   left: 166px;
 
   content: "";
@@ -797,7 +806,7 @@ a {
 }
 .city-features__title--gifts::before {
   position: absolute;
-  top: -40px;
+  top: 0px;
   left: 170px;
 
   content: "";
@@ -848,16 +857,19 @@ a {
 input[type="checkbox"] + label::before {
   content: "";
   display: inline-block;
-  width: 40px;
-  height: 31px;
+  width: 23px;
+  height: 23px;
+  margin-right: 16px;
 
-  line-height: 31px;
+  line-height: 23px;
   vertical-align: middle;
 
   background-image: url('../img/checkbox-off.svg');
   background-repeat: no-repeat;
 }
 input[type="checkbox"]:checked + label::before {
+  width: 27px;
+  height: 23px;
   background-image: url('../img/checkbox-on.svg');
 }
 input[type="checkbox"]:hover + label::before,
@@ -867,7 +879,7 @@ input[type="checkbox"]:focus + label::before {
 input[type="checkbox"]:checked:hover + label::before {
   background-image: url('../img/checkbox-on.svg');
 }
-input[type="checkbox"]:disbled + label::before {
+input[type="checkbox"]:disabled + label::before {
   opacity: 0.3;
 }
 .filter__features-group {
@@ -877,7 +889,7 @@ input[type="checkbox"]:disbled + label::before {
   border: none;
 }
 .filter__features-group p {
-  padding-bottom: 15px;
+  margin-bottom: 20px;
 }
 .filter__price {
   margin-bottom: 14px;
@@ -885,9 +897,9 @@ input[type="checkbox"]:disbled + label::before {
   border: none;
 }
 .price {
-  width: 159px;
-  height: 37px;
-  margin-bottom: 5px;
+  width: 157px;
+  height: 34px;
+  margin-bottom: 7px;
 
   background-color: transparent;
   border: 2px solid #ffffff;
@@ -967,7 +979,7 @@ input[type="checkbox"]:disbled + label::before {
 }
 .sort {
   display: flex;
-  padding: 30px 72px;
+  padding: 31px 72px;
 }
 .sort__result {
   margin-right: 48px;
@@ -976,7 +988,13 @@ input[type="checkbox"]:disbled + label::before {
   margin-right: 43px;
 }
 .sort .sort-name {
+  display: inline-block;
+
+  height: 21px;
   margin-right: 32px;
+
+  line-height: 21px;
+  vertical-align: middle;
 }
 .search__sort-type {
   display: flex;
@@ -991,22 +1009,37 @@ input[type="checkbox"]:disbled + label::before {
 
   background-image: url("../img/icon-up-dir.png");
   background-repeat: no-repeat;
+  opacity: 0.3;
+}
+.search__sort-type--up:hover,
+.search__sort-type--up:focus {
+  background-image: url("../img/icon-up-dir.png");
+  opacity: 1;
+}
+.search__sort-type--up:active {
+  background-image: url("../img/icon-up-dir-active.png");
 }
 .search__sort-type--down {
   width: 11px;
   height: 10px;
   margin-right: 13px;
 
-  background-image: url("../img/icon-up-dir.png");
+  background-image: url("../img/icon-down-dir.png");
   background-repeat: no-repeat;
-
-  transform: rotate(180deg);
+  opacity: 0.3;
+}
+.search__sort-type--down:hover,
+.search__sort-type--down:focus {
+  background-image: url("../img/icon-down-dir.png");
+  opacity: 1;
+}
+.search__sort-type--down:active {
+  background-image: url("../img/icon-down-dir-active.png");
 }
 .search__sort-type--active {
   width: 11px;
   height: 10px;
 
-  background-image: url("../img/icon-down-dir.png");
-
-  transform: rotate(0deg);
+  background-image: url("../img/icon-down-dir-active.png");
+  opacity: 1;
 }
