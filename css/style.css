@@ -859,7 +859,7 @@ a {
 input[type="checkbox"] + label::before {
   content: "";
   display: inline-block;
-  width: 23px;
+  width: 27px;
   height: 23px;
   margin-right: 16px;
 
@@ -869,14 +869,12 @@ input[type="checkbox"] + label::before {
   background-image: url('../img/checkbox-off.svg');
   background-repeat: no-repeat;
 }
-input[type="checkbox"]:checked + label::before {
-  width: 27px;
-  height: 23px;
-  background-image: url('../img/checkbox-on.svg');
-}
 input[type="checkbox"]:hover + label::before,
 input[type="checkbox"]:focus + label::before {
   background-image: url('../img/checkbox-off.svg');
+}
+input[type="checkbox"]:checked + label::before {
+  background-image: url('../img/checkbox-on.svg');
 }
 input[type="checkbox"]:checked:hover + label::before {
   background-image: url('../img/checkbox-on.svg');
