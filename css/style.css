@@ -341,6 +341,9 @@ a {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
+.search-form-close {
+  display: none;
+}
 .contacts {
   font-size: 21px;
   line-height: 26px;
