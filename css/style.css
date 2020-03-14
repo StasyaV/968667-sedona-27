@@ -341,6 +341,36 @@ a {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(-50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-49%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(-51%);
+  }
+}
+.search-form-close {
+  display: none;
+}
+.search-form-error {
+  animation: shake 0.6s;
+}
+.search-form-open {
+  display: block;
+}
 .contacts {
   font-size: 21px;
   line-height: 26px;
@@ -397,6 +427,8 @@ a {
   opacity: 0.3;
 }
 .hotel__info {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
   margin-left: 30px;
 
@@ -407,23 +439,26 @@ a {
 }
 .hotel__type {
   display: flex;
-  justify-content: flex-start;
-  margin-bottom: 16px;
-  margin-top: 5px;
-}
-.hotel img {
-  margin-top: 5px;
 }
 .hotel__type p {
-  min-width: 113px;
+  min-width: 116px;
 }
 .hotel__type-of-action {
   display: flex;
+  align-items: flex-end;
+  flex-grow: 1;
 }
 .hotel__title {
+  display: inline-block;
+  margin-bottom: 10px;
+
   font-size: 21px;
-  line-height: 26px;
   font-weight: bold;
+  line-height: 21px;
+  vertical-align: middle;
+  color: #000000;
+
+  cursor: pointer;
 }
 .hotel__title:hover,
 .hotel__title:focus {
@@ -671,10 +706,7 @@ a {
 .hotel {
   display: flex;
   justify-content: space-between;
-  padding-top: 22px;
-  padding-bottom: 33px;
-  padding-left: 74px;
-  padding-right: 60px;
+  padding: 30px 72px;
 
   border-bottom: 1px solid rgba(0, 1, 1, 0.2);
 }
@@ -852,7 +884,7 @@ a {
 input[type="checkbox"] + label::before {
   content: "";
   display: inline-block;
-  width: 23px;
+  width: 27px;
   height: 23px;
   margin-right: 16px;
 
@@ -862,14 +894,12 @@ input[type="checkbox"] + label::before {
   background-image: url('../img/checkbox-off.svg');
   background-repeat: no-repeat;
 }
-input[type="checkbox"]:checked + label::before {
-  width: 27px;
-  height: 23px;
-  background-image: url('../img/checkbox-on.svg');
-}
 input[type="checkbox"]:hover + label::before,
 input[type="checkbox"]:focus + label::before {
   background-image: url('../img/checkbox-off.svg');
+}
+input[type="checkbox"]:checked + label::before {
+  background-image: url('../img/checkbox-on.svg');
 }
 input[type="checkbox"]:checked:hover + label::before {
   background-image: url('../img/checkbox-on.svg');
@@ -941,6 +971,8 @@ input[type="checkbox"]:disabled + label::before {
 
   background-image: url("../img/filter-button.svg");
   background-repeat: no-repeat;
+
+  cursor: pointer;
 }
 .toggle-left::after {
   content: "";
