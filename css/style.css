@@ -184,7 +184,7 @@ a {
   color: #000000;
   text-transform: uppercase;
 
-  border: none;
+  border: solid 2px transparent;
 }
 .search-form__date {
   position: relative;
@@ -353,7 +353,7 @@ a {
   color: #000000;
 }
 .footer__contacts {
-  margin-right: 179px;
+  margin-right: 169px;
 }
 .social-link {
   display: inline-block;
@@ -697,7 +697,6 @@ a {
 .reasons__simple {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
 
   background-color: #eeeeee;
 }
@@ -705,7 +704,7 @@ a {
   display: flex;
   justify-content: space-between;
   padding-top: 60px;
-  margin-bottom: 73px;
+  padding-bottom: 73px;
 }
 .filer__form {
   display: flex;
@@ -743,10 +742,7 @@ a {
   flex-direction: column-reverse;
 }
 .reasons__number {
-  padding-top: 12px;
-  padding-left: 2px;
-  padding-right: 2px;
-  padding-bottom: 15px;
+  padding: 12px 2px;
 }
 .reasons__number::before,
 .reasons__number::after {
@@ -774,7 +770,7 @@ a {
   margin: 0 auto;
 }
 .reason-1__city-features .city-features__title {
-  padding-bottom: 18px;
+  margin-bottom: 18px;
 }
 .city-features__title--house::before {
   position: absolute;
@@ -846,7 +842,6 @@ a {
 }
 .contacts__tag {
   padding-bottom: 6px;
-  margin-top: -5px;
 }
 .map {
   width: 100%;
