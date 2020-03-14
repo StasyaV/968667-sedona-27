@@ -326,7 +326,8 @@ a {
 .search-form input:hover {
   background-color: #ebebeb;
 }
-.search-form__button:hover {
+.search-form__button:hover,
+.search-form__button:focus {
   background-color: #669ec0;
 }
 .search-form__button:active {
@@ -471,7 +472,6 @@ a {
   display: inline-block;
   align-self: flex-end;
   width: 110px;
-  margin-right: 10px;
 
   font-size: 14px;
   line-height: 27px;
@@ -484,8 +484,6 @@ a {
 .hotel__raiting-star {
   align-self: flex-end;
   height: 17px;
-  margin-top: 5px;
-  margin-right: 13px;
 
   background-image: url('../img/star.svg');
   background-repeat: repeat-x;
@@ -587,7 +585,7 @@ a {
   background-repeat: no-repeat;
 }
 .filter__title {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 
   font-size: 16px;
   font-weight: bold;
@@ -595,7 +593,7 @@ a {
 .filter__button {
   width: 136px;
   height: 35px;
-  margin-left: 96px;
+  margin-left: 90px;
 
   font-size: 14px;
   text-transform: uppercase;
@@ -614,10 +612,7 @@ a {
 }
 .filter__form {
   display: flex;
-  padding-top: 23px;
-  padding-bottom: 2px;
-  padding-left: 69px;
-  padding-right: 69px;
+  padding: 25px 72px 10px 72px;
 
   background-color: transparent;
   box-shadow: none;
@@ -625,10 +620,9 @@ a {
 .filter__block-2 {
   width: 320px;
   margin-left: auto;
-  margin-right: 10px;
 }
 .filter__block-2 .filter__title {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .sort__result {
   font-size: 21px;
@@ -908,8 +902,8 @@ input[type="checkbox"]:disabled + label::before {
   opacity: 0.3;
 }
 .filter__features-group {
-  margin-right: 105px;
-  margin-left: -8px;
+  margin-right: 120px;
+  padding: 0;
 
   border: none;
 }
@@ -917,8 +911,11 @@ input[type="checkbox"]:disabled + label::before {
   margin-bottom: 20px;
 }
 .filter__price {
-  margin-bottom: 14px;
   position: relative;
+
+  margin-bottom: 20px;
+  padding: 0;
+
   border: none;
 }
 .price {
@@ -952,8 +949,8 @@ input[type="checkbox"]:disabled + label::before {
 }
 .filter__price .filter__title::after {
   position: absolute;
-  top: 39px;
-  left: 170px;
+  top: 42px;
+  left: 168px;
 
   content: "";
   width: 2px;
@@ -964,7 +961,7 @@ input[type="checkbox"]:disabled + label::before {
 .toggle {
   display: inline-block;
   width: 22px;
-  height: 21px;
+  height: 22px;
 
   line-height: 22px;
   vertical-align: middle;
@@ -989,7 +986,7 @@ input[type="checkbox"]:disabled + label::before {
 .toggle-right::before {
   content: "";
   display: inline-block;
-  width: 65px;
+  width: 60px;
   height: 2px;
 
   line-height: 22px;
