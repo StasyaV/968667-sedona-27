@@ -137,6 +137,8 @@ a {
 
   background-color: #766357;
   border: none;
+
+  cursor: pointer;
 }
 .find-hotel {
   position: relative;
@@ -336,7 +338,7 @@ a {
 }
 .find-hotel__button:hover,
 .find-hotel__button:focus {
-  background-color: #766357;
+  background-color: #604e43;
 }
 .find-hotel__button:active {
   color: rgba(255, 255, 255, 0.3);
@@ -367,6 +369,7 @@ a {
   display: none;
 }
 .search-form-error {
+  border: 1px solid #ff0000;
   animation: shake 0.6s;
 }
 .search-form-open {
