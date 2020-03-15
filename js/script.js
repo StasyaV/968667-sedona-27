@@ -8,21 +8,12 @@ searchButton.addEventListener("click", function (evt) {
   if (searchForm.classList.contains("search-form-open")) {
     searchForm.classList.remove("search-form-open");
     searchForm.classList.add("search-form-close");
-  } else {
+  } if (searchForm.classList.contains("search-form-close")) {
       searchButton.addEventListener("click", function (evt) {
         evt.preventDefault();
         searchForm.classList.remove("search-form-close");
         searchForm.classList.add("search-form-open");
       });
-  }
-});
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    evt.preventDefault();
-    if (searchForm.classList.contains("search")) {
-      searchForm.classList.add("search-form-close");
-      searchForm.classList.remove("search-form-error");
-    }
   }
 });
   searchForm.addEventListener("submit", function (evt) {

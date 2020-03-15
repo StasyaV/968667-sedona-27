@@ -612,7 +612,7 @@ a {
 }
 .filter__form {
   display: flex;
-  padding: 25px 72px 10px 72px;
+  padding: 31px 72px;
 
   background-color: transparent;
   box-shadow: none;
@@ -675,21 +675,21 @@ a {
   flex-direction: column;
   max-width: 640px;
   margin: 0 auto;
-  padding: 58px 72px;
+  padding-top: 61px;
+  padding-right: 72px;
+  padding-bottom: 56px;
+  padding-left: 72px;
 }
 .about-city__title {
   margin-bottom: 27px;
 }
-.about-city__reasons {
-  margin-top: -5px;
-}
 .footer {
   display: flex;
   justify-content: space-between;
-  padding-left: 132px;
-  padding-right: 102px;
-  padding-bottom: 36px;
   padding-top: 36px;
+  padding-right: 101px;
+  padding-bottom: 36px;
+  padding-left: 132px;
 }
 .social {
   display: flex;
@@ -840,11 +840,11 @@ a {
   background-repeat: no-repeat;
 }
  .simple {
-   min-width: 395px;
-   padding-top: 47px;
-   padding-left: 61px;
-   padding-right: 63px;
-   padding-bottom: 54px;
+   min-width: 208px;
+   padding-top: 50px;
+   padding-right: 97px;
+   padding-bottom: 63px;
+   padding-left: 95px;
 
    text-align: center;
  }
@@ -909,6 +909,9 @@ input[type="checkbox"]:disabled + label::before {
 }
 .filter__features-group p {
   margin-bottom: 20px;
+}
+.filter__features-group p:last-child {
+  margin-bottom: 0px;
 }
 .filter__price {
   position: relative;
@@ -1024,7 +1027,6 @@ input[type="checkbox"]:disabled + label::before {
   display: flex;
   align-items: center;
   margin-left: auto;
-  margin-right: -13px;
 }
 .search__sort-type--up {
   width: 11px;
@@ -1046,7 +1048,6 @@ input[type="checkbox"]:disabled + label::before {
 .search__sort-type--down {
   width: 11px;
   height: 10px;
-  margin-right: 13px;
 
   background-image: url("../img/icon-down-dir.png");
   background-repeat: no-repeat;
