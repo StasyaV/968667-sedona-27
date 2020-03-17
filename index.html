@@ -11,7 +11,7 @@
   <body>
     <header class="main-header container">
       <nav class="main-header__nav">
-        <a class="main-header__logo" href="#" title="На главную">
+        <a class="main-header__logo" aria-label="Логотип сайта">
           <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип города">
         </a>
         <ul class="main-header__menu">
@@ -99,26 +99,26 @@
             <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
               <p class="search-form__date">
                 <label for="check-in">Дата заезда:</label>
-                <input type="text" id="check-in" name="check-in-date" placeholder="24 апреля 2017">
-                <button type="button" class="search-form__date--calendar" title="Выбрать дату"></button>
+                <input type="text" id="check-in" name="check-in-date" placeholder="24 апреля 2017" aria-label="Введите дату прибытия">
+                <button type="button" class="search-form__date--calendar" aria-label="Нажмите, чтобы выбрать дату"></button>
               </p>
               <p class="search-form__date">
                 <label for="check-out">Дата выезда:</label>
-                <input type="text" id="check-out" name="check-out-date" placeholder="4 июля 2017">
-                <button type="button" class="search-form__date--calendar" title="Выбрать дату"></button>
+                <input type="text" id="check-out" name="check-out-date" placeholder="4 июля 2017" aria-label="Введите дату отъезда">
+                <button type="button" class="search-form__date--calendar" aria-label="Нажмите, чтобы выбрать дату"></button>
               </p>
               <div class="guest-amount">
                 <p class="amount guest-amount__older">
                   <label for="guests">Взрослые:</label>
-                  <button type="button" class="button-amount minus" title="Уменьшить количество гостей"></button>
-                  <input type="text" id="guests" placeholder="2">
-                  <button type="button" class="button-amount plus" title="Увеличить количество гостей"></button>
+                  <button type="button" class="button-amount minus" aria-label="Нажмите, чтобы уменьшить количество гостей на 1"></button>
+                  <input type="text" id="guests" placeholder="2" aria-label="Введите количество взрослых гостей">
+                  <button type="button" class="button-amount plus" aria-label="Нажмите, чтобы увеличить количество гостей на 1"></button>
                 </p>
                 <p class="amount guest-amount__children">
                   <label for="guests-children">Дети:</label>
-                  <button type="button" class="button-amount minus" title="Уменьшить количество детей"></button>
-                  <input type="text" id="guests-children" placeholder="0">
-                  <button type="button" class="button-amount plus" title="Увеличить количество детей"></button>
+                  <button type="button" class="button-amount minus" aria-label="Нажмите, чтобы уменьшить количество гостей на 1"></button>
+                  <input type="text" id="guests-children" placeholder="0" aria-label="Введите количество детей, путешествующих с вами">
+                  <button type="button" class="button-amount plus" aria-label="Нажмите, чтобы увеличить количество гостей на 1"></button>
                 </p>
               </div>
               <button class="search-form__button">Найти</button>
@@ -134,16 +134,16 @@
       <footer class="footer container">
         <div class="footer__contacts">
           <p class="contacts contacts__tag">#visitSEDONA</p>
-          <p class="contacts contacts__phone">Тел: <a href="tel:+7495660266">+7(495) 666-02-66</a></p>
+          <p class="contacts contacts__phone">Тел: <a href="tel:+7495660266" aria-label="Телефон турфирмы">+7(495) 666-02-66</a></p>
         </div>
         <div class="social">
-          <a class="social-link social-link__twitter" href="#" title="twiter link"></a>
-          <a class="social-link social-link__fb" href="#" title="facebook link"></a>
-          <a class="social-link social-link__youtube" href="#" title="Youtube link"></a>
+          <a class="social-link social-link__twitter" href="#" aria-label="Ссылка на наш твитттер"></a>
+          <a class="social-link social-link__fb" href="#" aria-label="Ссылка на группу в фейсбуке"></a>
+          <a class="social-link social-link__youtube" href="#" aria-label="Ссылка на Youtube-канал"></a>
         </div>
         <div class="developed">
           <p>Website by</p>
-          <a class="developed__logo" href="https://htmlacademy.ru/intensive/htmlcss" title="HTML Academy">
+          <a class="developed__logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Логотип HTML Academy">
           </a>
         </div>
       </footer>
