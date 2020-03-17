@@ -418,6 +418,8 @@ a {
 
   background-color: #81b3d2;
   border: none;
+
+  cursor: pointer;
 }
 .search-form input:focus {
   border: solid 2px #e5e5e5;
