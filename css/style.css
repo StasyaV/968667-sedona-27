@@ -146,7 +146,7 @@ a {
 
   font-size: 21px;
   line-height: 26px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: bold;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
@@ -414,7 +414,7 @@ a {
 
   font-size: 21px;
   line-height: 58px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
   vertical-align: middle;
   color: #ffffff;
